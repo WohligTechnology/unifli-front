@@ -672,13 +672,17 @@ footer {
  .mycart-row{
      background-color: #76D7C4  ;
  }
- .mycart-head{
+
+ .mycart-content{
+.table > thead > tr > th{
     font-size: 25px;
     color: white;
     font-family: share tech;
     text-align: center;
     font-weight: 400;
-    padding: 8px 0 !important;
+    padding: 8px 0 !important; 
+}
  }
 @import "fancybox-override";
+@import "ruchi";
 @import "mobile";
