@@ -23,10 +23,15 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'AboutCtrl'
         })
-        .state('calculator', {
-            url: "/calculator",
+        .state('google-map-2', {
+            url: "/google-map-2",
             templateUrl: "views/template.html",
-            controller: 'CalculatorCtrl'
+            controller: 'Google-Map-2Ctrl'
+        })
+        .state('google-map', {
+            url: "/google-map",
+            templateUrl: "views/template.html",
+            controller: 'Google-MapCtrl'
         })
         .state('about_us', {
             url: "/about_us",
@@ -42,6 +47,27 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             url: "/blog",
             templateUrl: "views/template.html",
             controller: 'BlogCtrl'
+        })
+        .state('support-dfm', {
+            url: "/support-dfm",
+            templateUrl: "views/template.html",
+            controller: 'Support-DfmCtrl'
+        })
+         
+         .state('service', {
+            url: "/service",
+            templateUrl: "views/template.html",
+            controller: 'ServiceCtrl'
+        })
+        .state('how-we-work', {
+            url: "/how-we-work",
+            templateUrl: "views/template.html",
+            controller: 'How-We-WorkCtrl'
+        })
+        .state('mycart', {
+            url: "/mycart",
+            templateUrl: "views/template.html",
+            controller: 'MycartCtrl'
         })
         .state('form', {
             url: "/form",
