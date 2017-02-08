@@ -1,0 +1,26 @@
+.product{
+    background-image: url("../img/2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 100vh;
+    margin-top: -110px;
+}
+
+.product-type{
+    margin-top: 200px;
+}
+
+.drone-info{
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 80px;
+    display: block;
+    width: 70%;
+    margin: -20px auto 0;
+}
+
+.drone-image{
+    img{
+        margin: 0 auto;
+    }
+}
