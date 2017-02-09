@@ -39,6 +39,39 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Product"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+
+      $scope.tab = "design";
+    $scope.classa = 'active';
+    $scope.classb = '';
+    $scope.classc = '';
+   
+
+    $scope.tabchange = function(tab, a) {
+        $scope.tab = tab;
+        if (a == 1) {
+            $scope.classa = 'active-tab';
+            $scope.classb = '';
+            $scope.classc = '';
+           
+
+        }
+        if (a == 2) {
+            $scope.classb = 'active-tab';
+            $scope.classa = '';
+            $scope.classc = '';
+          
+
+        }
+        if (a == 3) {
+            $scope.classc = 'active-tab';
+            $scope.classb = '';
+            $scope.classa = '';
+        
+
+        }
+    
+
+    };
 })
 
 .controller('AboutCtrl', function($scope, TemplateService, NavigationService, $timeout) {

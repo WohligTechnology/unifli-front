@@ -1,14 +1,14 @@
+//product//
+
 .product{
-    background-image: url("../img/2.jpg");
-    background-repeat: no-repeat;
+    background: url("../img/2.jpg") no-repeat;
     background-size: cover;
-    // height: 100vh;
     margin-top: -110px;
 }
 
-.product-type{
-    margin-top: 200px;
-}
+.product-type{ margin-top: 200px; }
+
+.pointer{ cursor: pointer;}
 
 .drone-info{
     text-align: center;
@@ -24,3 +24,75 @@
         margin: 0 auto;
     }
 }
+
+    .row-flex {
+        @include display(flex);
+        width: 100%;
+    }
+    .col-flex {
+        @include flex(1);
+        display: block;
+        width: 50%;
+    }
+
+    .features{
+    background-color: #fff;
+    margin: 0 20px;
+    }
+
+    .feature-img{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;   
+    }
+
+.flight{ background-image: url("../img/product/v1.png");}
+
+.propeller{ background-image: url("../img/product/v2.png");}
+
+.motor{ background-image: url("../img/product/v3.png");}
+
+.weight{ background-image: url("../img/product/v5.png");}
+
+.autonomous{ background-image: url("../img/product/v7.png");}
+
+.images{
+   width: auto;
+   height: 200px;
+   margin: 10px;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;   
+}
+
+.drone1{ background-image: url("../img/product/image1.jpg"); }
+
+.drone2{ background-image: url("../img/product/image2.jpg"); }
+
+.drone3{ background-image: url("../img/product/image3.jpg"); }
+
+.drone4{ background-image: url("../img/product/image5.jpg"); }
+
+.drone5{ background-image: url("../img/product/image6.jpg"); }
+
+.drone6{ background-image: url("../img/product/image99.jpg"); }
+
+.drone7{ background-image: url("../img/product/image1.jpg"); }
+
+.drone8{ background-image: url("../img/product/image1.jpg"); }
+
+.feature-images { padding: 40px;}
+
+.package{ background-color: #ccc; }
+
+.button{
+    margin: 0 auto;
+    display: block;
+    color: #fff;
+    background-color: $brand-danger;
+}
+
+//product//
