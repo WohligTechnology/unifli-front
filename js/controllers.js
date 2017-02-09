@@ -159,6 +159,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.formSubmitted = true;
     }
 })
+.controller('MemberPageCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("member-page"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("MemberPage"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+    $scope.formSubmitted = false;
+
+    $scope.submitForm = function(data) {
+        console.log(data);
+        $scope.formSubmitted = true;
+    }
+})
 .controller('Blog-IndividualCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("blog-individual"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Blog-Individual"); //This is the Title of the Website

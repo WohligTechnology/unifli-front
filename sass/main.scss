@@ -590,6 +590,7 @@ footer {
     color: white;
     border: none;
     font-size: 18px;
+    font-weight: bold;
 }
 .font-drone{
      font-size: 21px;
@@ -742,6 +743,50 @@ footer {
                         margin: 0 2px;
                     }
                 }
+   //scss for member-page1
+  .bg-memberpage1{
+    background: url("../img/memberpage1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: -110px;
+   }      
+   .member-container{
+       background: white;
+       padding: 50px;
+       margin:30px;
+   }  
+   .member-table{
+        th{
+           font-size: 25px;
+          color:  $brand-primary;
+          }  
+   td{
+        font-size: 20px;
+          color:  $brand-primary;
+        
+      }
+   }   
+  .btn-addto{
+      padding: 5px 45px;
+  }
+  .btn-start{
+      padding: 5px 35px;
+  }
+  .member-font-1{
+    font-size: 39px;
+    font-family: share tech;
+    color: white;
+  }
+  .btn-become{
+     font-size: 32px;
+    font-family: share tech;
+    padding: 0px 45px;
+    color:$brand-primary;
+  }
+  .p-80{
+      padding-bottom:80px; 
+  }
 @import "fancybox-override";
 @import "ruchi";
 @import "mobile";

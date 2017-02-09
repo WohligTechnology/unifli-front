@@ -74,6 +74,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'MycartCtrl'
         })
+         .state('member-page', {
+            url: "/member-page",
+            templateUrl: "views/template.html",
+            controller: 'MemberPageCtrl'
+        })
         .state('form', {
             url: "/form",
             templateUrl: "views/template.html",
