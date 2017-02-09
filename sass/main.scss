@@ -10,7 +10,7 @@
 /* Bootstrap Variables Goes Here */
 
 $brand-primary: #0B5345 !default;
-$brand-success: #84ce3c !default;
+$brand-success: #ff8400!default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
 $brand-info: #000072 !default;
@@ -71,6 +71,9 @@ float: right;
 }
 .m-0{
     margin: 0;
+}
+.font-bold{
+font-weight: bold;
 }
 .icon-bar {
     display: block;
@@ -489,10 +492,7 @@ footer {
 .support-heading {
     padding-top: 200px;
 }
-.support-become {
-    background-color: white;
-    margin: 30px 60px;
-} 
+
 .support-content {
     background-color: white;
     padding: 60px;
@@ -750,21 +750,37 @@ footer {
     background-size: cover;
     width: 100%;
     margin-top: -110px;
-   }      
+   }     
+   .member-p-50{
+          padding: 50px;
+   } 
    .member-container{
        background: white;
-       padding: 50px;
-       margin:30px;
+       margin: 10px 30px 40px 30px;
    }  
    .member-table{
-        th{
+       tr:nth-child(12n){
+           td{
+           border-bottom-color:transparent;
+           }
+       }
+       tr:last-child{
+           td{
+               padding-bottom: 45px;
+           }
+       }
+ .table > thead > tr > th{
+           padding-left: 20px;
            font-size: 25px;
-          color:  $brand-primary;
-          }  
-   td{
+           color:  $brand-primary;
+       }
+ .table > tbody > tr > td{
         font-size: 20px;
-          color:  $brand-primary;
-        
+        color:  $brand-primary;
+        padding-left: 20px;
+      }
+      ul{
+          padding:20px;
       }
    }   
   .btn-addto{
@@ -778,14 +794,30 @@ footer {
     font-family: share tech;
     color: white;
   }
+  .available-font{
+    font-size: 71px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Share Tech', sans-serif;
+    letter-spacing: 2px;
+  }
   .btn-become{
+        &:hover{
+        background: lighten($color: $brand-primary, $amount:10%);
+        color:white;
+    }
      font-size: 32px;
     font-family: share tech;
     padding: 0px 45px;
     color:$brand-primary;
+    background: white;
   }
   .p-80{
       padding-bottom:80px; 
+  }
+  .member-f-28{
+          font-size: 28px;
+    font-family: share tech;
   }
 @import "fancybox-override";
 @import "ruchi";
