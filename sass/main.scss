@@ -446,7 +446,7 @@ footer {
 .map-content {
     background-color: white;
     padding: 35px;
-    margin-top: 25px;
+    margin: 25px 30px 0px 30px;
 }
 .map-form {
     color:$brand-primary;
@@ -466,15 +466,13 @@ footer {
 }
 
 .map-block-2 {
-    padding-bottom: 20px;
+   padding:0px 40px 20px 40px;
 }
-
 .img-map {
     width: 100%;
 }
-
 .sub-content {
-    padding: 1px;
+    padding: 0 30px;
 }
 
 .icon-details {
@@ -493,10 +491,11 @@ footer {
     padding-top: 200px;
 }
 
-.support-content {
+
+  .support-content {
     background-color: white;
     padding: 60px;
-    margin-top: 10px;
+     margin: 30px 30px 0px 30px;
 }
 .support-list {
     margin: 12px 0 10px;
@@ -565,6 +564,15 @@ footer {
     }
 }
 //scss for service
+.m-50{
+    margin-top:50px;
+}
+.capture{
+    margin:30px 0px;
+}
+.btn-register{
+    padding: 5px 40px;
+} 
 .bg-service{
     background: url("../img/Services.jpg");
     background-repeat: no-repeat;
@@ -575,11 +583,18 @@ footer {
 .service-drone{
     padding: 40px 0;
 }
+.drones-section{
+    margin-top: 65px;
+}
 .service-data{
   padding: 0 30px;
 }
 .deploy{
     padding-top:15px;
+}
+.img-drafting{
+    margin: 0 auto;
+    width: 90px;
 }
 .service-btn{
      &:hover{
