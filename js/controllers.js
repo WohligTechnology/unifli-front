@@ -187,9 +187,54 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.formSubmitted = true;
     }
 })
+.controller('PrivacyPolicyCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("privacypolicy"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("PrivacyPolicy"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+    $scope.formSubmitted = false;
+
+    $scope.submitForm = function(data) {
+        console.log(data);
+        $scope.formSubmitted = true;
+    }
+})
+.controller('TermsandConditionsCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("terms"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("TermsandConditions"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+    $scope.formSubmitted = false;
+
+    $scope.submitForm = function(data) {
+        console.log(data);
+        $scope.formSubmitted = true;
+    }
+})
 .controller('MemberPageCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("member-page"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("MemberPage"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+
+    $scope.formSubmitted = false;
+
+    $scope.submitForm = function(data) {
+        console.log(data);
+        $scope.formSubmitted = true;
+    }
+})
+.controller('MemberCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("member"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Member"); //This is the Title of the Website
+    TemplateService.title = $scope.menutitle;
+    $scope.navigation = NavigationService.getnav();
+})
+.controller('MemberPage2Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("member-page-2"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("MemberPage2"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 

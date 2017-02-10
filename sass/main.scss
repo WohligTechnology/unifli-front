@@ -29,7 +29,7 @@ h1 {
     font-weight: bold;
     color: white;
     font-family: 'Share Tech', sans-serif;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
 }
 
 h2 {
@@ -74,6 +74,15 @@ float: right;
 }
 .font-bold{
 font-weight: bold;
+}
+.btn-main{
+    font-weight:bold;
+    background: $brand-primary;
+    font-size:18px;
+    width:200px;
+    border: none;
+    color: white;
+    margin: 0 auto;
 }
 .icon-bar {
     display: block;
@@ -209,13 +218,8 @@ a,
 }
 
 .btn-10 {
-    width: 160px;
-    height: 25px;
-    color: white;
-    background-color: $brand-primary;
-    border: none;
-    margin: 0px auto;
-    display: block;
+    margin: 10px auto;
+    padding: 5px 0px;
 }
 
 .block-2 {
@@ -228,7 +232,9 @@ a,
     padding: 0 40px;
     margin: 0px;
 }
-
+.p-50{
+    padding: 0 50px;
+}
 .photo {
     text-align: center;
     color: $brand-primary;
@@ -237,11 +243,9 @@ a,
         width: 135px;
     }
 }
-
 .scott {
     padding: 0px 20px 0px 50px;
 }
-
 .alex {
     padding: 0px 50px 0px 20px;
 }
@@ -655,7 +659,7 @@ footer {
     width:70%;
 }
 .worklogo{
-    margin:80px auto;
+       margin:80px auto;
         width: 400px;
 }
 .img-step1{
@@ -769,6 +773,9 @@ footer {
    .member-p-50{
           padding: 50px;
    } 
+   .member-p-20{
+       padding: 20px 0px;
+   }
    .member-container{
        background: white;
        margin: 10px 30px 40px 30px;
@@ -833,6 +840,37 @@ footer {
   .member-f-28{
           font-size: 28px;
     font-family: share tech;
+  }
+  //scss fot tems
+ .bg-tems{
+    background: url("../img/memberpage1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: -110px;
+  }
+  .tems-container{
+      background: white;
+      padding: 20px;
+  }
+  //scss for member 
+  .signup-container{
+      background: white;
+      margin: 10px 35px 70px 35px;
+  }
+  .member-input{
+    border: none;
+    border-bottom: 1px solid grey;
+    color: grey;
+    font-size: 22px;
+    font-family: share tech;
+    width: 100%;
+  }
+  .member-col{
+      margin: 35px;
+  }
+  .member-form{
+      margin: 35px;
   }
 @import "fancybox-override";
 @import "ruchi";

@@ -79,6 +79,26 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'MemberPageCtrl'
         })
+        .state('member', {
+            url: "/member",
+            templateUrl: "views/template.html",
+            controller: 'MemberCtrl'
+        })
+            .state('member-page-2', {
+            url: "/member-page-2",
+            templateUrl: "views/template.html",
+            controller: 'MemberPage2Ctrl'
+        })
+          .state('privacypolicy', {
+            url: "/privacypolicy",
+            templateUrl: "views/template.html",
+            controller: 'PrivacyPolicyCtrl'
+        })
+         .state('terms-and-conditions', {
+            url: "/terms",
+            templateUrl: "views/template.html",
+            controller: 'TermsandConditionsCtrl'
+        })
         .state('form', {
             url: "/form",
             templateUrl: "views/template.html",
