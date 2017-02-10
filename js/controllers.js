@@ -87,19 +87,14 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.formSubmitted = true;
     }
 })
-.controller('About_usCtrl', function($scope, TemplateService, NavigationService, $timeout) {
-    $scope.template = TemplateService.changecontent("about_us"); //Use same name of .html file
-    $scope.menutitle = NavigationService.makeactive("About_us"); //This is the Title of the Website
+.controller('AboutusCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+    $scope.template = TemplateService.changecontent("aboutus"); //Use same name of .html file
+    $scope.menutitle = NavigationService.makeactive("Aboutus"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 
-    $scope.formSubmitted = false;
-
-    $scope.submitForm = function(data) {
-        console.log(data);
-        $scope.formSubmitted = true;
-    }
 })
+
 .controller('Google-Map-2Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("google-map-2"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Google-Map-2"); //This is the Title of the Website

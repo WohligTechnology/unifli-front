@@ -33,10 +33,10 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'Google-MapCtrl'
         })
-        .state('about_us', {
-            url: "/about_us",
+        .state('aboutus', {
+            url: "/aboutus",
             templateUrl: "views/template.html",
-            controller: 'About_usCtrl'
+            controller: 'AboutusCtrl'
         })
          .state('blog-individual', {
             url: "/blog-individual",
