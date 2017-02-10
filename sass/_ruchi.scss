@@ -1,6 +1,4 @@
 //product//
-
-
 .pads{ padding: 0 90px; }
 
 .product{
@@ -44,14 +42,13 @@ p,li{
     font-size: 17px;
     font-weight: 400;
 }
-
 }
+
+.whitey{ color: #fff !important;}
 
 .product-type{ margin-top: 200px; }
 
 .pointer{ cursor: pointer;}
-
-// .inline-block{display: inline-block;}
 
 .drone-info{
     text-align: center;
@@ -89,10 +86,8 @@ p,li{
         p{
            font-size: 25px;
            font-weight: 700;
-           position: absolute;
-           top: 35%;
-           right: 20%;
-           transform: translate(-35%,-20%);
+           @include position(absolute, 35% 20% null null);
+           @include transform(translate(-35%,-20%));
         }
         span{
             display: inline-block;
@@ -106,10 +101,9 @@ p,li{
     padding: 60px 0;
     }
 
-
     .feature-min{ padding: 20px 80px; }
 
-    .feature-img{
+    .feature-img,.story-img{
     width: 80px;
     height: 80px;
     margin: 0 auto;
@@ -122,8 +116,7 @@ p,li{
         p{
     font-size: 20px;
     font-weight: 600;
-        }
-   
+        } 
     }
 
 .padding{ padding: 0 50px;}    
@@ -236,10 +229,94 @@ p,li{
         padding: 0 20px;
     }
 }
-
 //product//
 
 //about//
-.aboutus{ background-image: url("../img/");}
+
+.aboutus{ background-image: url("../img/aboutus.jpg");}
+
+.rounded{
+    border-radius: 80px 80px 80px 80px;
+    background: rgba(12, 45, 42, 0.71);
+    width: 550px;
+    height: 100px;
+}
+.story-img{
+    width: 110px;
+    height: 110px;
+    margin: -5px auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+.story-imgs{
+   margin: -5px 0px 0 5px;
+}
+
+.leaf{ background-image: url("../img/aboutus/leaf.png");}
+
+.thumb{ background-image: url("../img/aboutus/thumbs.png");}
+
+.drop { background-image: url("../img/aboutus/drop.png");}
+
+.clock { background-image: url("../img/aboutus/clock.png");}
+
+.box { background-image: url("../img/aboutus/box.png");}
+
+.computer { background-image: url("../img/aboutus/computer.png");}
+
+.bird { background-image: url("../img/aboutus/bird.png");}
+
+.tag { background-image: url("../img/aboutus/tag.png");}
+
+.s { background-image: url("../img/aboutus/s.png");}
+
+.bulb { background-image: url("../img/aboutus/bulb.png");}
+
+.story-info{
+    width: 75%;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    p{
+        margin: 0;
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        letter-spacing: normal;
+        line-height: 27px;
+    }
+}
+
+.story-infos{
+    width: 70%;
+    margin: 0 0px 0 45px;   
+}
+.story-one{ padding: 80px 50px 200px; }
+
+.mouse-img{
+    img{
+        margin: 0 auto;
+    }
+}
+.mouse{
+    padding-bottom: 80px;
+    p{
+        margin: 0;
+    }
+}
+
+.unifli-story{
+    padding: 40px 0 100px;
+    h1{
+        padding: 20px 0 0;
+    }
+}
+.story-drone{
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+
 
 //about//
