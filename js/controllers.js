@@ -272,12 +272,26 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.formSubmitted = true;
     }
 })
-.controller('headerctrl', function($scope, TemplateService) {
+.controller('headerctrl', function($scope,$uibModal ,TemplateService) {
     $scope.template = TemplateService;
     $scope.$on('$stateChangeSuccess', function(event, toState, toParams, fromState, fromParams) {
         $(window).scrollTop(0);
     });
     $.fancybox.close(true);
+    $scope.login =function(){
+        $scope.loginModal =$uibModal.open({
+          animation :true,
+          templateUrl:'views/content/Modal/login.html',
+          scope:$scope,
+          windowClass:"login-modal"
+
+        });
+    };
+    $scope.loginclose =function(){
+        $scope.loginModal.close();
+    };
+
+
 })
 
 .controller('languageCtrl', function($scope, TemplateService, $translate, $rootScope) {

@@ -33,7 +33,7 @@ h1 {
 }
 
 h2 {
-     margin: 0;
+    margin: 0;
     font-size: 35px;
     color: $brand-primary;
     font-family: 'Share Tech', sans-serif;
@@ -47,43 +47,54 @@ h3 {
 }
 
 p {
-    margin: 12px 0 10px;
+    // margin: 12px 0 10px;
     font-size: 17px;
     color: $brand-primary;
-
-    a{
+    a {
         color: $brand-primary;
         font-weight: bold;
         text-decoration: underline;
-        &:hover{
+        &:hover {
             color: $brand-primary;
         }
     }
 }
-.inline-block{
+
+.inline-block {
     display: inline-block;
 }
-.float-r{
-float: right;
+
+.float-r {
+    float: right;
 }
-.float-l{
+
+.float-l {
     float: left;
 }
-.m-0{
+
+.m-0 {
     margin: 0;
 }
-.font-bold{
-font-weight: bold;
+
+.font-bold {
+    font-weight: bold;
 }
-.btn-main{
-    font-weight:bold;
+
+.btn-main {
+    font-weight: bold;
     background: $brand-primary;
-    font-size:18px;
-    width:200px;
+    font-size: 18px;
+    width: 200px;
     border: none;
     color: white;
     margin: 0 auto;
+    display: block;
+    &:hover {
+        color: white;
+        background: $brand-primary
+    }
 }
+
 .icon-bar {
     display: block;
     height: 2px;
@@ -232,9 +243,11 @@ a,
     padding: 0 40px;
     margin: 0px;
 }
-.p-50{
+
+.p-50 {
     padding: 0 50px;
 }
+
 .photo {
     text-align: center;
     color: $brand-primary;
@@ -243,9 +256,11 @@ a,
         width: 135px;
     }
 }
+
 .scott {
     padding: 0px 20px 0px 50px;
 }
+
 .alex {
     padding: 0px 50px 0px 20px;
 }
@@ -275,9 +290,34 @@ footer {
     margin: 5px;
 }
 
+.slide-down {
+    margin-top: 15% !important;
+}
+
+.sidemenu {
+    background-color: #76D7C4;
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+}
+
+.header-btn {
+    display: block;
+    font-size: 30px;
+    color: #0B705C;
+    font-family: share tech;
+    &:hover {
+        color: #0B705C;
+    }
+}
+
 .head-content {
     margin-top: 15px;
     border-bottom: 1px solid #BDE7DE;
+    z-index: 2;
     position: relative;
     &:before {
         content: '';
@@ -300,7 +340,32 @@ footer {
 }
 
 .btn-header {
+    span {
+        @include transition(all 300ms linear);
+    }
     background: transparent;
+    &:focus {
+        outline: none;
+    }
+}
+
+.hamburger-cross {
+    span {
+        @include transition(all 300ms linear);
+    }
+    span:first-child {
+        position: relative;
+        top: 7px;
+        @include transform(rotate(45deg));
+    }
+    span:nth-child(2) {
+        opacity: 0;
+    }
+    span:last-child {
+        position: relative;
+        bottom: 7px;
+        @include transform(rotate(-45deg));
+    }
 }
 
 .header-list {
@@ -309,7 +374,7 @@ footer {
 }
 
 .btn-join {
-    background: #51A292;
+    background-color: #76D7C4;
 }
 
 .header-logo {
@@ -347,7 +412,7 @@ footer {
     width: 100%;
     img {
         width: 100%;
-        padding: 50px 50px 0px 50px;
+        padding: 0px 50px 30px 50px;
     }
 }
 
@@ -376,7 +441,7 @@ footer {
 }
 
 .section-2 {
-    padding: 50px;
+      padding: 50px 50px 50px;
     .thumbnail {
         border: none;
         border-radius: 0px;
@@ -452,29 +517,35 @@ footer {
     padding: 35px;
     margin: 25px 30px 0px 30px;
 }
+
 .map-form {
-    color:$brand-primary;
-    font-size:18px;
+    color: $brand-primary;
+    font-size: 18px;
 }
+
 .map-border {
     border: 1px solid $brand-primary;
 }
+
 .btn-map {
     background-color: $brand-primary;
     color: white;
     font-size: 20px;
     font-weight: bold;
 }
+
 .map-block-1 {
     padding-bottom: 30px;
 }
 
 .map-block-2 {
-   padding:0px 40px 20px 40px;
+    padding: 0px 40px 20px 40px;
 }
+
 .img-map {
     width: 100%;
 }
+
 .sub-content {
     padding: 0 30px;
 }
@@ -483,6 +554,7 @@ footer {
     padding: 0px 30px;
     text-align: justify;
 }
+
 //scss for suppprt-dfm
 .bg-support-dfm {
     background: url("../img/Support.png");
@@ -491,40 +563,45 @@ footer {
     width: 100%;
     margin-top: -110px;
 }
+
 .support-heading {
     padding-top: 200px;
 }
 
-
-  .support-content {
+.support-content {
     background-color: white;
     padding: 60px;
-     margin: 30px 30px 0px 30px;
+    margin: 30px 30px 0px 30px;
 }
+
 .support-list {
     margin: 12px 0 10px;
     font-size: 17px;
     color: $brand-primary;
     display: inline-block;
-   // padding:0 40px;
+    // padding:0 40px;
 }
+
 .p-78 {
     padding: 0 78px;
 }
+
 .p-40 {
     padding: 0 40px;
 }
+
 .support-icon {
     margin: 0 auto;
-    width:110px;
+    width: 110px;
     img {
-        width:100%;
+        width: 100%;
     }
 }
-.btn-support { 
-    &:hover{
-        background: lighten($color: $brand-primary, $amount:10%);
-        color:white;
+
+.btn-support {
+    &:hover {
+        background: lighten($color: $brand-primary, $amount: 10%);
+        color: white;
     }
     background: $brand-primary;
     color: white;
@@ -532,23 +609,29 @@ footer {
     font-size:18px;
     font-weight: bold;
 }
+
 .mt20 {
     margin-top: 20px;
 }
+
 .list-2 {
-    margin:0;
+    margin: 0;
     padding: 0;
     list-style-type: none;
 }
-.mt-250{
-    margin-top:250px;
+
+.mt-250 {
+    margin-top: 250px;
 }
-.support-2{
-    margin-top:70px;
+
+.support-2 {
+    margin-top: 70px;
 }
-.support-3{
+
+.support-3 {
     margin-top: 50px;
 }
+
 .makeActive {
     padding: 40px 0px;
     .active {
@@ -567,43 +650,53 @@ footer {
         }
     }
 }
+
 //scss for service
-.m-50{
-    margin-top:50px;
+.m-50 {
+    margin-top: 50px;
 }
-.capture{
-    margin:30px 0px;
+
+.capture {
+    margin: 30px 0px;
 }
-.btn-register{
+
+.btn-register {
     padding: 5px 40px;
-} 
-.bg-service{
+}
+
+.bg-service {
     background: url("../img/Services.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     margin-top: -110px;
 }
-.service-drone{
+
+.service-drone {
     padding: 40px 0;
 }
-.drones-section{
+
+.drones-section {
     margin-top: 65px;
 }
-.service-data{
-  padding: 0 30px;
+
+.service-data {
+    padding: 0 30px;
 }
-.deploy{
-    padding-top:15px;
+
+.deploy {
+    padding-top: 15px;
 }
-.img-drafting{
+
+.img-drafting {
     margin: 0 auto;
     width: 90px;
 }
-.service-btn{
-     &:hover{
-        background: lighten($color: $brand-primary, $amount:10%);
-        color:white;
+
+.service-btn {
+    &:hover {
+        background: lighten($color: $brand-primary, $amount: 10%);
+        color: white;
     }
     background: $brand-primary;
     color: white;
@@ -611,32 +704,38 @@ footer {
     font-size: 18px;
     font-weight: bold;
 }
-.font-drone{
-     font-size: 21px;
+
+.font-drone {
+    font-size: 21px;
     font-weight: bold;
     color: $brand-primary;
 }
-.drone-heading{  
-     font-size: 45px;
-     margin: 0;
+
+.drone-heading {
+    font-size: 45px;
+    margin: 0;
     font-family: 'Share Tech', sans-serif;
-    }
-.btn-p{
-        padding: 6px 33px;
 }
+
+.btn-p {
+    padding: 6px 33px;
+}
+
 //scss for how-we-work
-.bg-work{
+.bg-work {
     background: url("../img/work.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     margin-top: -110px;
 }
-.work-container{
+
+.work-container {
     background: white;
     padding: 60px;
 }
-.step{
+
+.step {
     font-size: 32px;
     color: white;
     background: $brand-primary;
@@ -645,233 +744,333 @@ footer {
     font-family: share tech;
     display: inline-block;
 }
-.work-sb-font{
+
+.work-sb-font {
     font-size: 30px;
     color: $brand-primary;
     font-family: 'Share Tech', sans-serif;
     margin: 0;
     padding: 0;
 }
-.w-50{
-     width:40%;
+
+.w-50 {
+    width: 40%;
 }
-.w-60{
-    width:70%;
+
+.w-60 {
+    width: 70%;
 }
-.worklogo{
-       margin:80px auto;
-        width: 400px;
+
+.worklogo {
+    margin: 80px auto;
+    width: 400px;
 }
-.img-step1{
+
+.img-step1 {
     width: 90px;
     padding-bottom: 75px;
     padding-right: 10px;
     margin: 0;
 }
-.img-step1b{
+
+.img-step1b {
     width: 90px;
     padding-right: 10px;
     padding-top: 50px;
 }
+
 //scss for mycart
-.bg-mycart{
+.bg-mycart {
     background: url("../img/mycart.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     margin-top: -110px;
 }
-.mycart-heading{
-   font-size: 70px;
+
+.mycart-heading {
+    font-size: 70px;
     font-weight: bold;
     letter-spacing: 3px;
     font-family: share tech;
     padding-top: 230px;
-
-}
-.mycart-container{
-        padding: 43px;
-}
- .mycart-row{
-     background-color: #76D7C4;
- }
-
- .mycart-content{
-.table > thead > tr > th {
-    font-size: 25px;
-    color: white;
-    font-family: share tech;
-    text-align: center;
-    font-weight: 400;
-    padding: 10px 0 !important; 
-    border-top: 3px solid #ddd;  
-}
-.table{
-      margin-bottom: 5px;
 }
 
-.table > tbody > tr > td {
-     text-align: center;
-    font-size: 20px;
-    color: $brand-primary;
-    padding: 22px 0px;
+.mycart-container {
+    padding: 43px;
+}
+
+.mycart-row {
+    background-color: #76D7C4;
+}
+
+.mycart-content {
+    .table>thead>tr>th {
+        font-size: 25px;
+        color: white;
+        font-family: share tech;
+        text-align: center;
+        font-weight: 400;
+        padding: 10px 0 !important;
+        border-top: 3px solid #ddd;
+    }
+    .table {
+        margin-bottom: 5px;
+    }
+    .table>tbody>tr>td {
+        text-align: center;
+        font-size: 20px;
+        color: $brand-primary;
+        padding: 22px 0px;
         width: 70px;
-    border-bottom: 3px solid #ddd;
+        border-bottom: 3px solid #ddd;
+    }
+    .table>tfoot>tr>td {
+        font-size: 24px;
+        color: #0B5345;
+        font-weight: bolder;
+        padding: 22px 0px;
+    }
+    .mycart-row1 {
+        background: white;
+    }
 }
-.table > tfoot > tr > td {
-         font-size: 24px;
-    color: #0B5345;
-    font-weight: bolder;
-    padding: 22px 0px;
-   
-}
-.mycart-row1{
-    background: white;
-}
-}
-.btn-back{
+
+.btn-back {
     font-size: 22px;
     font-weight: bold;
     padding: 8px 65px;
     border: none;
     margin-right: 10px;
 }
-.btn-checkout{
+
+.btn-checkout {
     font-size: 22px;
     font-weight: bold;
     padding: 8px 50px;
     border: none;
 }
-.total{
-      padding-left: 65px !important;
- }
- .qty-detail {         .form-control {
-                        width: 22%;
-                        height: 30px;
-                        padding: 6px 8px;
-                        font-size: 20px;
-                        display: inline-block;
-                        text-align: center;
-                        color:  $brand-primary;
-                        border-color:  $brand-primary;
-                    }
-                    .fa {
-                        font-size: 20px;
-                        vertical-align: middle;
-                        cursor: pointer;
-                        margin: 0 2px;
-                    }
-                }
-   //scss for member-page1
-  .bg-memberpage1{
+
+.total {
+    padding-left: 65px !important;
+}
+
+.qty-detail {
+    .form-control {
+        width: 22%;
+        height: 30px;
+        padding: 6px 8px;
+        font-size: 20px;
+        display: inline-block;
+        text-align: center;
+        color: $brand-primary;
+        border-color: $brand-primary;
+    }
+    .fa {
+        font-size: 20px;
+        vertical-align: middle;
+        cursor: pointer;
+        margin: 0 2px;
+    }
+}
+
+//scss for member-page1
+.bg-memberpage1 {
     background: url("../img/memberpage1.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     margin-top: -110px;
-   }     
-   .member-p-50{
-          padding: 50px;
-   } 
-   .member-p-20{
-       padding: 20px 0px;
-   }
-   .member-container{
-       background: white;
-       margin: 10px 30px 40px 30px;
-   }  
-   .member-table{
-       tr:nth-child(12n){
-           td{
-           border-bottom-color:transparent;
-           }
-       }
-       tr:last-child{
-           td{
-               padding-bottom: 45px;
-           }
-       }
- .table > thead > tr > th{
-           padding-left: 20px;
-           font-size: 25px;
-           color:  $brand-primary;
-       }
- .table > tbody > tr > td{
-        font-size: 20px;
-        color:  $brand-primary;
+}
+
+.member-p-50 {
+    padding: 50px;
+}
+
+.member-p-20 {
+    padding: 20px 0px;
+}
+
+.member-container {
+    background: white;
+    margin: 10px 30px 40px 30px;
+}
+
+.member-table {
+    tr:nth-child(12n) {
+        td {
+            border-bottom-color: transparent;
+        }
+    }
+    tr:last-child {
+        td {
+            padding-bottom: 45px;
+        }
+    }
+    .table>thead>tr>th {
         padding-left: 20px;
-      }
-      ul{
-          padding:20px;
-      }
-   }   
-  .btn-addto{
-      padding: 5px 45px;
-  }
-  .btn-start{
-      padding: 5px 35px;
-  }
-  .member-font-1{
+        font-size: 25px;
+        color: $brand-primary;
+    }
+    .table>tbody>tr>td {
+        font-size: 20px;
+        color: $brand-primary;
+        padding-left: 20px;
+    }
+    ul {
+        padding: 20px;
+    }
+}
+
+.btn-addto {
+    padding: 5px 45px;
+}
+
+.btn-start {
+    padding: 5px 35px;
+}
+
+.member-font-1 {
     font-size: 39px;
     font-family: share tech;
     color: white;
-  }
-  .available-font{
+}
+
+.available-font {
     font-size: 71px;
     font-weight: bold;
     color: white;
     font-family: 'Share Tech', sans-serif;
     letter-spacing: 2px;
-  }
-  .btn-become{
-        &:hover{
-        background: lighten($color: $brand-primary, $amount:10%);
-        color:white;
+}
+
+.btn-become {
+    &:hover {
+        background: lighten($color: $brand-primary, $amount: 10%);
+        color: white;
     }
-     font-size: 32px;
+    font-size: 32px;
     font-family: share tech;
     padding: 0px 45px;
     color:$brand-primary;
     background: white;
-  }
-  .p-80{
-      padding-bottom:80px; 
-  }
-  .member-f-28{
-          font-size: 28px;
+}
+
+.p-80 {
+    padding-bottom: 80px;
+}
+
+.member-f-28 {
+    font-size: 28px;
     font-family: share tech;
-  }
-  //scss fot tems
- .bg-tems{
+}
+
+//scss fot tems
+.bg-tems {
     background: url("../img/memberpage1.png");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
     margin-top: -110px;
-  }
-  .tems-container{
-      background: white;
-      padding: 20px;
-  }
-  //scss for member 
-  .signup-container{
-      background: white;
-      margin: 10px 35px 70px 35px;
-  }
-  .member-input{
+}
+
+.tems-container {
+    background: white;
+    padding: 20px;
+}
+
+//scss for member 
+.dropdown-member {
+        width: 100%;
+    background: transparent;
+    border-bottom: 1px solid #A0EFDF;
+}
+.dropdown-menu{
+width: 100%;
+}
+.signup-container {
+    background: white;
+    margin: 10px 35px 70px 35px;
+}
+.member-input {
     border: none;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #A0EFDF;
     color: grey;
-    font-size: 22px;
+    font-size: 20px;
     font-family: share tech;
+    padding-top: 10px;
     width: 100%;
-  }
-  .member-col{
-      margin: 35px;
-  }
-  .member-form{
-      margin: 35px;
-  }
+}
+
+.member-col {
+    .form-group {
+        input {
+            &:focus {
+                outline: none;
+            }
+        }
+        select {
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    margin: 35px;
+}
+
+.member-form {
+    margin: 35px;
+    padding: 30px 0 50px 0;
+}
+
+.member-select {
+    width: 100%;
+    border: none;
+    background: transparent;
+    border-bottom: 1px solid #A0EFDF;
+    -webkit-appearance: none
+}
+
+.member-position {
+    position: relative;
+}
+
+.member-arrow {
+    &:before {
+    content: "\f0d7";
+    font-size: 30px;
+    color: $brand-primary;
+    }
+    position: absolute;
+    right: 0px;
+    top: -10px; 
+}
+//scss for modal login
+.modal-heading {
+    color: white;
+}
+
+.modal-header {
+    background-color: $brand-primary;
+}
+
+.login-modal {
+    padding: 0 40px 25px;
+    .modal-content {
+        margin: 35% auto;
+        width: 50%;
+        border: none;
+    }
+}
+
+.login-modal .form-group {
+    input {
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
 @import "fancybox-override";
 @import "ruchi";
 @import "mobile";
