@@ -23,32 +23,41 @@ body {
 }
 
 //scss for @font-face
+
+h1 ,h2,h3,h4,h5,h6{
+   font-family: 'Share Tech', sans-serif;
+    letter-spacing: 2px;
+    color: $brand-primary;
+}
 h1 {
-    margin: 0;
-    font-size: 94px;
-    font-weight: bold;
-    color: white;
-    font-family: 'Share Tech', sans-serif;
-    letter-spacing: 3px;
+    font-size: 67px;
+    font-weight: 700;
+    color: #fff !important;
 }
-
 h2 {
-    margin: 0;
-    font-size: 35px;
-    color: $brand-primary;
-    font-family: 'Share Tech', sans-serif;
+    font-size: 60px;
+   
 }
-
 h3 {
-    font-size: 17px;
-    color: $brand-primary;
-    font-family: 'Share Tech', sans-serif;
-    margin: 1px;
+    font-size: 52px;
+    
 }
-
+h4{
+    font-size:24p
+}
+h5{
+    font-size: 21px; 
+}
+h6{
+    font-size: 18px;
+}
+p,li{
+   font-family: 'Abel', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
 p {
-    // margin: 12px 0 10px;
-    font-size: 17px;
+    font-size: 16px;
     color: $brand-primary;
     a {
         color: $brand-primary;
