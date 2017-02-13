@@ -6,42 +6,7 @@
     background-size: cover;
     margin-top: -110px;
 
-    h2,h3,h4,h5,h6,p,li{
-        font-family: 'Share Tech', sans-serif;
-        color: $brand-primary;
-        letter-spacing: 2px;
-    }
-
-    h2{
-    font-size: 86px;
-    font-weight: 700;
-}
-
-h3{
-    font-size: 80px;
-    font-weight: 700;
-}
-
-h4{   
-    font-size: 50px;
-    font-weight: 400;
-}
-h5{
-     font-size: 30px;
-     font-weight: 400;
-     
-}
-h6{
-     font-size: 20px;
-     font-weight: 400;
-     
-}
-
-p,li{
-    font-family: 'Abel', sans-serif;
-    font-size: 17px;
-    font-weight: 400;
-}
+    h1,li{ color: $brand-primary !important; }
 }
 
 .whitey{ color: #fff !important;}
@@ -76,9 +41,8 @@ p,li{
     }
 
     .video{
-        background-image: url("../img/product/man.png");
+        background: url("../img/product/man.png") no-repeat;
         background-size: contain;
-        background-repeat: no-repeat;
         background-position: center;
         padding: 28vh 0;
         margin: 40px 0px 0;
@@ -324,15 +288,13 @@ p,li{
 //home//
 
 .section-1-img{
-    h4{
+    h3{
     margin: 0;
     color: #fff;
-    font-family: 'Share Tech', sans-serif;
     font-size: 50px;
     font-weight: 600;
     letter-spacing: 2px;
-    line-height: 1;
-      
+    line-height: 1;    
     }
 }
 
