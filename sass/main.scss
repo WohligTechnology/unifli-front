@@ -430,7 +430,7 @@ position:absolute;
     font-size: 15px;
     color: #76D7C4;
 }
-.h35 { min-height: 40px; }
+.h35 { min-height: 70px; }
 
 .section-2 {
     .thumbnail {
@@ -888,11 +888,11 @@ position:absolute;
     }
     .table>thead>tr>th {
         padding-left: 20px;
-        font-size: 25px;
+        font-size: 22px;
         color: $brand-primary;
     }
     .table>tbody>tr>td {
-        font-size: 20px;
+        font-size: 18px;
         color: $brand-primary;
         padding-left: 20px;
     }
@@ -916,11 +916,11 @@ position:absolute;
 }
 
 .available-font {
-    font-size: 71px;
-    font-weight: bold;
-    color: white;
-    font-family: 'Share Tech', sans-serif;
-    letter-spacing: 2px;
+    // font-size: 71px;
+    // font-weight: bold;
+    // color: white;
+    // font-family: 'Share Tech', sans-serif;
+    // letter-spacing: 2px;
 }
 
 .btn-become {
