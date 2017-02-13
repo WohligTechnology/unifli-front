@@ -224,18 +224,19 @@ a,
     width: 100%;
     margin-top: -110px;
 }
+
 .heading-about {
     margin-top: 230px;
 }
 
+.man-heading{ font-size: 35px; }
 .btn-10 {
     margin: 10px auto;
     padding: 5px 0px;
 }
-
 .block-2 {
     background-color: white;
-    margin: 60px 0px;
+    margin: 40px 0px;
     padding: 30px;
 }
 
@@ -244,26 +245,17 @@ a,
     margin: 0px;
 }
 
-.p-50 {
-    padding: 0 50px;
-}
+.p-50  { padding: 0 50px; }
 
 .photo {
     text-align: center;
     color: $brand-primary;
     padding-top: 15px;
-    img {
-        width: 135px;
-    }
-}
+    img {  width: 135px; }
+      }
+.scott { padding: 0px 20px 0px 50px; }
 
-.scott {
-    padding: 0px 20px 0px 50px;
-}
-
-.alex {
-    padding: 0px 50px 0px 20px;
-}
+.alex { padding: 0px 50px 0px 20px; }
 
 // scss for footer
 footer {
@@ -398,14 +390,12 @@ footer {
     width: 100%;
     margin-top: -110px;
 }
-
 .blog-title {
     padding-top: 160px;
     padding-bottom: 15px;
 }
-.blog-btn{
-        text-align: center;
-    padding: 30px;
+.serveying{
+    padding-bottom: 25px;
 }
 .blog-relative{
 position: relative;
@@ -415,16 +405,15 @@ position:absolute;
 }
 .main-content {
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
+    padding: 60px;
 }
-
 .blog-img-1 {
     width: 100%;
     img {
         width: 100%;
-        padding: 0px 50px 30px 50px;
+        padding: 30px 0px;
     }
 }
-
 .btn-view {
     border: none;
     background: transparent;
@@ -432,24 +421,18 @@ position:absolute;
     font-size: 18px;
     color: $brand-primary;
 }
-
 .sep-22 {
     font-size: 20px;
     font-weight: bold;
     color: #76D7C4;
 }
-
 .august {
     font-size: 15px;
     color: #76D7C4;
 }
-
-.h35 {
-    height: 40px;
-}
+.h35 { height: 40px; }
 
 .section-2 {
-      padding: 50px 50px 50px;
     .thumbnail {
         border: none;
         border-radius: 0px;
@@ -458,18 +441,22 @@ position:absolute;
 }
 
 //scss for blog-individual
-.data-individual {
-    padding: 0px 63px;
+ .data-individual {
+    padding: 7px 20px;
 }
-
+.blog-individual-1{
+      width: 100%;
+    img {
+        width: 100%;
+      padding-bottom: 30px;
+    }
+}
 .middle-title {
-    font-size: 56px;
-    text-align: left;.section-common{
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-position: center center;
-   width: 100%;
-   height: 100vh;
+    font-size: 50px;
+    text-align: left;
+    margin-left: 10px;
+    font-weight: bold;
+    padding: 40px 0 0;
 }
 .section-common{
    background-repeat: no-repeat;
@@ -490,9 +477,7 @@ position:absolute;
 .bg-img-sec2 { background-image: url("../img/section2.jpg"); }
 
 .bg-img-sec2 { background-image: url("../img/section2.jpg"); }
-    margin-left: 10px;
-    font-weight: bold;
-}
+  
 
 //scss for about_us section-2
 .about_us-img {
@@ -534,26 +519,21 @@ position:absolute;
     width: 100%;
     margin-top: -110px;
 }
-
 .heading-calculator {
     margin-top: 250px;
     padding: 0 35px;
 }
-
 .map-content {
     background-color: white;
     padding: 35px;
     margin: 25px 30px 0px 30px;
 }
-
 .map-form {
     color: $brand-primary;
     font-size: 18px;
 }
 
-.map-border {
-    border: 1px solid $brand-primary;
-}
+.map-border { border: 1px solid $brand-primary; }
 
 .btn-map {
     background-color: $brand-primary;
@@ -562,24 +542,16 @@ position:absolute;
     font-weight: bold;
 }
 
-.map-block-1 {
-    padding-bottom: 30px;
-}
+.map-block-1 { padding-bottom: 30px; }
 
-.map-block-2 {
-    padding: 0px 40px 20px 40px;
-}
+.map-block-2 { padding: 0px 40px 20px 40px; }
 
-.img-map {
-    width: 100%;
-}
+.img-map { width: 100%; }
 
-.sub-content {
-    padding: 0 30px;
-}
+.sub-content { padding: 0 30px; }
 
 .icon-details {
-    padding: 0px 30px;
+    padding: 0px 28px;
     text-align: justify;
 }
 
@@ -592,9 +564,7 @@ position:absolute;
     margin-top: -110px;
 }
 
-.support-heading {
-    padding-top: 200px;
-}
+.support-heading { padding-top: 200px; }
 
 .support-content {
     background-color: white;
@@ -607,23 +577,16 @@ position:absolute;
     font-size: 17px;
     color: $brand-primary;
     display: inline-block;
-    // padding:0 40px;
 }
 
-.p-78 {
-    padding: 0 78px;
-}
+.p-78 { padding: 0 78px; }
 
-.p-40 {
-    padding: 0 40px;
-}
+.p-40 { padding: 0 40px; }
 
 .support-icon {
     margin: 0 auto;
     width: 110px;
-    img {
-        width: 100%;
-    }
+    img { width: 100%; }
 }
 
 .btn-support {
@@ -717,7 +680,7 @@ position:absolute;
 }
 
 .img-drafting {
-    margin: 0 auto;
+    margin: 5px auto;
     width: 90px;
 }
 
@@ -757,14 +720,14 @@ position:absolute;
     width: 100%;
     margin-top: -110px;
 }
-
 .work-container {
     background: white;
-    padding: 60px;
+    padding: 60px 60px 0px 60px;
+    margin-top: 20px;
 }
 
 .step {
-    font-size: 32px;
+    font-size: 27px;
     color: white;
     background: $brand-primary;
     padding: 0px 12px;
@@ -773,21 +736,9 @@ position:absolute;
     display: inline-block;
 }
 
-.work-sb-font {
-    font-size: 30px;
-    color: $brand-primary;
-    font-family: 'Share Tech', sans-serif;
-    margin: 0;
-    padding: 0;
-}
+.w-50 { width: 40%;}
 
-.w-50 {
-    width: 40%;
-}
-
-.w-60 {
-    width: 70%;
-}
+.w-60 { width: 70%; }
 
 .worklogo {
     margin: 80px auto;
@@ -987,12 +938,6 @@ position:absolute;
 .p-80 {
     padding-bottom: 80px;
 }
-
-.member-f-28 {
-    font-size: 28px;
-    font-family: share tech;
-}
-
 //scss fot tems
 .bg-tems {
     background: url("../img/memberpage1.png");
@@ -1009,12 +954,21 @@ position:absolute;
 
 //scss for member 
 .dropdown-member {
-        width: 100%;
+    width: 100%;
     background: transparent;
     border-bottom: 1px solid #A0EFDF;
 }
-.dropdown-menu{
-width: 100%;
+  .dropdown-margin { margin-top: 30px;}
+
+.dropdown-menu{ width: 100%; }
+
+.member-form-m30{  margin-top: 35px; }
+
+.member-right{ margin-right:10px; }
+
+.coupon-box{
+    padding: 0px 15px;
+    border: 1px solid $brand-primary;
 }
 .signup-container {
     background: white;
