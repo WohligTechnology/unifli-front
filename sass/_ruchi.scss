@@ -9,6 +9,16 @@
     h1,li{ color: $brand-primary !important; }
 }
 
+.button{
+    font-family: 'Share Tech', sans-serif;
+    font-weight: 700;
+}
+.margin0{ margin: 0;}
+
+.mb{ margin-bottom: 20px;}
+
+.relative{ position: relative;}
+
 .whitey{ color: #fff !important;}
 
 .product-type{ margin-top: 200px; }
@@ -197,7 +207,12 @@
 
 //about//
 
-.aboutus{ background-image: url("../img/aboutus.jpg");}
+.aboutus{ 
+    background-image: url("../img/aboutus.jpg");
+    
+    h1{
+        color: #fff !important;
+    }}
 
 .rounded{
     border-radius: 80px 80px 80px 80px;
@@ -295,6 +310,52 @@
     font-weight: 600;
     letter-spacing: 2px;
     line-height: 1;    
+    }
+}
+
+.about-short{
+li{
+    list-style-type: none;
+}
+}
+
+.us-info{ padding: 10px 0; }
+
+.dots{
+    width: 4px;
+    height: 4px;
+    background-color: #fff;
+    border-radius: 100%;
+    margin: 5px auto;
+}
+
+.top-spacing{ padding-top: 60px; }
+
+.bg-img-sec2{
+  
+    h2{
+        color: #76D7C4;
+    }
+}
+
+.line-after:after{
+    content: "";
+    border: 1px solid $brand-primary;
+    width: 60%;
+    position: absolute;
+    top: 37px;
+    right: -65px;
+}
+
+.read{
+    border-bottom: 2px solid #fff;
+    display: inline-block;
+    padding: 10px 0;
+    color: $brand-primary;
+    font-weight: 400;
+    background-color: transparent;
+    &:focus{
+        outline: 0;
     }
 }
 

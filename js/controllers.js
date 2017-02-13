@@ -14,7 +14,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     // ];
      $scope.section = {
      one: "views/content/section/section1.html",
-     two: "views/content/section/section2.html"
+     two: "views/content/section/section2.html",
+     three: "views/content/section/section3.html",
+     four: "views/content/section/section4.html"
    };
 })
 
