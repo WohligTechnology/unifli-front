@@ -26,17 +26,19 @@ body {
 
 h1 ,h2,h3,h4,h5,h6{
    font-family: 'Share Tech', sans-serif;
-    letter-spacing: 2px;
-    color: $brand-primary;
-    font-weight: 700;
+   color: $brand-primary
 }
 h1 {
     font-size: 67px;
     color: #fff !important;
+     font-weight: 700;
+      letter-spacing: 2px;
 }
-h2 { font-size: 60px; }
+h2 { font-size: 60px;
+     font-weight: 700;
+      letter-spacing: 2px; }
 h3 { font-size: 52px; }
-h4{ font-size:24p; }
+h4{ font-size:24px; }
 h5{ font-size: 21px; }
 h6{ font-size: 18px; }
 p,li{
