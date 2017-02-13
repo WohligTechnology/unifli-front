@@ -403,7 +403,16 @@ footer {
     padding-top: 150px;
     padding-bottom: 15px;
 }
-
+.blog-btn{
+        text-align: center;
+    padding: 30px;
+}
+.blog-relative{
+position: relative;
+}
+.blog-absolute{
+position:absolute;
+}
 .main-content {
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
 }
@@ -455,7 +464,32 @@ footer {
 
 .middle-title {
     font-size: 56px;
-    text-align: left;
+    text-align: left;.section-common{
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   width: 100%;
+   height: 100vh;
+}
+.section-common{
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   width: 100%;
+   height: 100vh;
+}
+
+.section-1-img {
+  margin-top: -110px;
+  background-image: url("../img/sections.jpg");
+  position: relative;
+}
+
+.sec-content { @include position(absolute,40% null null 12%); }
+
+.bg-img-sec2 { background-image: url("../img/section2.jpg"); }
+
+.bg-img-sec2 { background-image: url("../img/section2.jpg"); }
     margin-left: 10px;
     font-weight: bold;
 }
