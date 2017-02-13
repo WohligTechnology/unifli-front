@@ -419,9 +419,8 @@ footer {
 .btn-view {
     border: none;
     background: transparent;
-    border-bottom: 3px solid #76D7C4;
-    font-size: 20px;
-    font-weight: bold;
+    border-bottom: 2px solid #76D7C4;
+    font-size: 18px;
     color: $brand-primary;
 }
 
@@ -474,21 +473,16 @@ footer {
 
 //scss for home .section-1
 .section-1-img {
-    background-image: url("../img/sections.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 100%;
-    margin-top: -94px;
-    position: relative;
-    height: 100vh;
+   margin-top: -110px;
+   background-image: url("../img/sections.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position: center center;
+   position: relative;
+   height: 100vh;
 }
 
-.sec-content {
-    padding: 150px 0px 0px 73px;
-    position: absolute;
-}
-
+.sec-content { @include position(absolute,40% null null 12%); }
 .bg-img-sec2 {
     background-image: url("../img/section2.jpg");
     background-repeat: no-repeat;
