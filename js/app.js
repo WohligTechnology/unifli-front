@@ -58,6 +58,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'Support-DfmCtrl'
         })
+         .state('support-dfm-2', {
+            url: "/support-dfm-2",
+            templateUrl: "views/template.html",
+            controller: 'supportDfm2Ctrl'
+        })
          
          .state('service', {
             url: "/service",
