@@ -313,6 +313,10 @@
     }
 }
 
+.drone-section{
+      background-image: url("../img/6sec.jpg");
+}
+
 .about-short{
 li{
     list-style-type: none;
@@ -356,6 +360,44 @@ li{
     background-color: transparent;
     &:focus{
         outline: 0;
+    }
+    &:hover{
+        border-bottom: 2px solid #76D7C4; 
+    }
+}
+
+.support{ color: #61bfb6; }
+
+.submit{
+    margin: 0;
+    background-color: #5fb8ae;
+    width: 20%;
+}
+
+.uav-drones{
+    a{
+        text-decoration: none;
+    }
+}
+
+.newsletter{
+    margin: 20px 0;
+    label{
+        display: block;
+        font-family: 'Abel', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        color: #0B5345;
+    }
+
+    input{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #5fb8ae;
+    &:focus{
+        outline: 0;
+    }
     }
 }
 
