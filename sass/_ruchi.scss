@@ -6,7 +6,7 @@
     background-size: cover;
     margin-top: -110px;
 
-    h1,li{ color: $brand-primary !important; }
+    h1{ color: $brand-primary !important; }
 }
 
 .button{
@@ -368,6 +368,8 @@ li{
 
 .support{ color: #61bfb6; }
 
+.drones{ color: #43a59e;}
+
 .submit{
     margin: 0;
     background-color: #5fb8ae;
@@ -399,6 +401,57 @@ li{
         outline: 0;
     }
     }
+}
+.droning{ 
+    background-image: url("../img/new/drones.png");
+    margin-top: -86px;
+    }
+
+.support-section{
+     background-image: url("../img/new/support.png");
+}  
+.contact-section{
+     background-image: url("../img/new/contact.png");
+}  
+
+.fly{ margin-top: 30px; }
+
+.create{ margin-top: 50px; }
+
+.fc-img{
+    margin-top: -30px;
+    img{
+       margin: 0px auto 50px;
+    }
+    h4{
+        position: relative;
+        &:before{
+    content: "";
+    border: 4px solid;
+    position: absolute;
+    top: -25px;
+    width: 60%;
+    left: 105px;
+    }
+    }
+  
+}
+
+.drone-inform{
+ h2{
+     font-size: 90px;
+ }
+}
+.surveying{
+  h3{
+      font-size: 30px;
+      @include position(absolute,50% null null 50%);
+      @include transform(translate(-50%,-50%));
+  }
+  h5{
+        @include position(absolute,55% null null 50%);
+         @include transform(translate(-50%,-50%));
+  }
 }
 
 //home//
