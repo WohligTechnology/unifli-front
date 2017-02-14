@@ -667,9 +667,9 @@ position:absolute;
     padding: 40px 0;
 }
 
-.drones-section {
-    margin-top: 65px;
-}
+// .drones-section {
+//     margin-top: 65px;
+// }
 
 .service-data {
     padding: 0 30px;
@@ -694,12 +694,6 @@ position:absolute;
     border: none;
     font-size: 18px;
     font-weight: bold;
-}
-
-.font-drone {
-    font-size: 21px;
-    font-weight: bold;
-    color: $brand-primary;
 }
 
 .drone-heading {
@@ -768,10 +762,7 @@ position:absolute;
 }
 
 .mycart-heading {
-    font-size: 70px;
-    font-weight: bold;
-    letter-spacing: 3px;
-    font-family: share tech;
+    color: $brand-primary !important;
     padding-top: 230px;
 }
 
@@ -785,7 +776,7 @@ position:absolute;
 
 .mycart-content {
     .table>thead>tr>th {
-        font-size: 25px;
+        font-size: 20px;
         color: white;
         font-family: share tech;
         text-align: center;
@@ -798,41 +789,30 @@ position:absolute;
     }
     .table>tbody>tr>td {
         text-align: center;
-        font-size: 20px;
+        font-size: 18px;
         color: $brand-primary;
         padding: 22px 0px;
         width: 70px;
         border-bottom: 3px solid #ddd;
     }
     .table>tfoot>tr>td {
-        font-size: 24px;
+        font-size: 20px;
         color: #0B5345;
         font-weight: bolder;
         padding: 22px 0px;
     }
-    .mycart-row1 {
-        background: white;
-    }
+
+    .mycart-row1 { background: white; }
 }
 
-.btn-back {
-    font-size: 22px;
-    font-weight: bold;
-    padding: 8px 65px;
-    border: none;
-    margin-right: 10px;
+.btn-back { margin-right: 10px;  }
+
+.btn-mycart {
+    padding: 8px 0px; 
+    width:180px !important;
 }
 
-.btn-checkout {
-    font-size: 22px;
-    font-weight: bold;
-    padding: 8px 50px;
-    border: none;
-}
-
-.total {
-    padding-left: 65px !important;
-}
+.total { padding-left: 65px !important; }
 
 .qty-detail {
     .form-control {
@@ -862,12 +842,13 @@ position:absolute;
     margin-top: -110px;
 }
 
-.member-p-50 {
-    padding: 50px;
-}
+.member-p-50 {  padding: 50px; }
 
 .member-p-20 {
     padding: 20px 0px;
+}
+.member-p-20-2 {
+    padding-top: 20px;
 }
 
 .member-container {
@@ -910,17 +891,13 @@ position:absolute;
 }
 
 .member-font-1 {
-    font-size: 39px;
-    font-family: share tech;
     color: white;
+    padding-bottom: 10px;
 }
 
 .available-font {
-    // font-size: 71px;
-    // font-weight: bold;
-    // color: white;
-    // font-family: 'Share Tech', sans-serif;
-    // letter-spacing: 2px;
+     color: white;
+    
 }
 
 .btn-become {
@@ -928,7 +905,7 @@ position:absolute;
         background: lighten($color: $brand-primary, $amount: 10%);
         color: white;
     }
-    font-size: 32px;
+    font-size: 28px;
     font-family: share tech;
     padding: 0px 45px;
     color:$brand-primary;
@@ -937,19 +914,6 @@ position:absolute;
 
 .p-80 {
     padding-bottom: 80px;
-}
-//scss fot tems
-.bg-tems {
-    background: url("../img/memberpage1.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    margin-top: -110px;
-}
-
-.tems-container {
-    background: white;
-    padding: 20px;
 }
 
 //scss for member 
@@ -1053,6 +1017,23 @@ position:absolute;
     }
 }
 
+//scss fot tems
+.bg-tems {
+    background: url("../img/memberpage1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: -110px;
+}
+
+.tems-container {
+    background: white;
+    padding: 20px;
+}
+//scss for privacy-policy
+.policy-heading{
+    padding-top: 100px;
+}
 @import "fancybox-override";
 @import "ruchi";
 @import "mobile";
