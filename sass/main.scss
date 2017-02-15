@@ -364,8 +364,8 @@ a,
 .man-heading{ font-size: 35px; }
 
 .btn-10 {
-    margin: 10px auto;
     padding: 5px 0px;
+    width: 172px
 }
 
 .block-2 {
@@ -493,7 +493,7 @@ padding-right: 80px;
    background-size: cover;
    background-position: center center;
    width: 100%;
-   height: 120vh;
+   height: 10vh;
 }
 
 .section-1-img {
@@ -530,15 +530,14 @@ padding-right: 80px;
     color: $brand-primary;
     font-size: 18px;
 }
+.form-horizontal .control-label {
+     padding-left: 7px;
+     padding-top: 0px;
+     }
 
 .map-border { border: 1px solid $brand-primary; }
 
-.btn-map {
-    background-color: $brand-primary;
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-}
+.btn-map {  width: 260px; }
 
 .map-block-1 { padding-bottom: 30px; }
 
@@ -598,6 +597,16 @@ padding-right: 80px;
     padding-right: 10px;
     padding-top: 50px;
 }
+
+p.step-right { position:relative}
+
+p.step-right:after {
+    border: 1px dashed $brand-primary ;
+    content: ' ';
+    width: 485px;
+    position: absolute;
+    top: 17px;
+}
 //scss for member-page1
 .bg-memberpage1 {
     background: url("../img/memberpage1.png");
@@ -638,10 +647,6 @@ padding-right: 80px;
     }
     ul { padding: 20px; }
 }
-
-.btn-addto { padding: 5px 45px; }
-
-.btn-start { padding: 5px 35px; }
 
 .member-font-1 {
     color: white;
@@ -869,15 +874,13 @@ padding-right: 80px;
     background-size: cover;
     background-position: center center;
     width: 100%;
-    height: 120vh;
+    height: 10vh;
 }
 
 //scss for service
 .m-50 { margin-top:20px; }
 
 .capture { margin: 25px 0px; }
-
-.btn-register { padding: 5px 40px; }
 
 .bg-service {
     background: url("../img/Services.jpg");
@@ -916,25 +919,13 @@ padding-right: 80px;
     width: 90px;
 }
 
-.service-btn {
-    &:hover {
-        background: lighten($color: $brand-primary, $amount: 10%);
-        color: white;
-    }
-    background: $brand-primary;
-    color: white;
-    border: none;
-    font-size: 18px;
-    font-weight: bold;
-}
+.service-btn { width:120px; }
 
 .drone-heading {
     font-size: 45px;
     margin: 0;
     font-family: 'Share Tech', sans-serif;
 }
-
-.btn-p {  padding: 6px 33px; }
 
 //scss for suppprt-dfm
 .bg-support-dfm {
