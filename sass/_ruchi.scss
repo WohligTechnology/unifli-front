@@ -13,7 +13,7 @@
     font-family: 'Share Tech', sans-serif;
     font-weight: 700;
 }
-.margin0{ margin: 0;}
+.margin0{ margin: 0 !important;}
 
 .mb{ margin-bottom: 20px;}
 
@@ -270,6 +270,7 @@
     width: 70%;
     margin: 0 0px 0 45px;   
 }
+
 .story-one{ padding: 80px 50px 200px; }
 
 .mouse-img{
@@ -313,9 +314,7 @@
     }
 }
 
-.drone-section{
-      background-image: url("../img/6sec.jpg");
-}
+.drone-section{ background-image: url("../img/6sec.jpg"); }
 
 .about-short{
 li{
@@ -370,12 +369,6 @@ li{
 
 .drones{ color: #43a59e;}
 
-.submit{
-    margin: 0;
-    background-color: #5fb8ae;
-    width: 20%;
-}
-
 .uav-drones{
     a{
         text-decoration: none;
@@ -401,22 +394,29 @@ li{
         outline: 0;
     }
     }
+    button{
+         background-color: #5fb8ae;
+          width: 20%;
+    }
 }
+
 .droning{ 
     background-image: url("../img/new/drones.png");
     margin-top: -125px;
     }
 
-.support-section{
-     background-image: url("../img/new/support.png");
-}  
-.contact-section{
-     background-image: url("../img/new/contact.png");
-}  
+.support-section{ background-image: url("../img/new/support.png"); }
+
+.contact-section{ 
+    background-image: url("../img/new/contact.png");
+    margin-top: -75px;
+    }  
 
 .fly{ margin-top: 30px; }
 
 .create{ margin-top: 50px; }
+
+.fly-img{ margin-left: 15px;}
 
 .fc-img{
     margin-top: -30px;
@@ -442,6 +442,7 @@ li{
      font-size: 90px;
  }
 }
+
 .surveying{
   h3{
       font-size: 30px;
@@ -450,8 +451,10 @@ li{
   }
   h5{
         @include position(absolute,55% null null 50%);
-         @include transform(translate(-50%,-50%));
+        @include transform(translate(-50%,-50%));
   }
 }
+
+.load{ width: 12% !important;}
 
 //home//
