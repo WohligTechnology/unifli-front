@@ -12,10 +12,15 @@
 .button{
     font-family: 'Share Tech', sans-serif;
     font-weight: 700;
+    &:focus{
+        outline: 0;
+    }
 }
 .margin0{ margin: 0 !important;}
 
 .mb{ margin-bottom: 20px;}
+
+.mb10{ margin-bottom: 10px; }
 
 .relative{ position: relative;}
 
@@ -66,6 +71,9 @@
         span{
             display: inline-block;
             vertical-align: middle;
+            i{
+                color: #fff;
+            }
         }
     }
 
@@ -75,7 +83,7 @@
     padding: 60px 0;
     }
 
-    .feature-min{ padding: 20px 80px; }
+    .feature-min{ padding: 20px 100px; }
 
     .feature-img,.story-img{
     width: 80px;
@@ -386,10 +394,11 @@ li{
     }
 
     input{
-    width: 100%;
+    width: 70%;
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #5fb8ae;
+    background-color: transparent;
     &:focus{
         outline: 0;
     }
@@ -411,7 +420,7 @@ li{
     background-image: url("../img/new/contact.png");
     margin-top: -75px;
     h2{
-        padding-top: 210px;
+        padding: 210px 20px 0 0;
     }
     }  
 
@@ -433,8 +442,8 @@ li{
     border: 4px solid;
     position: absolute;
     top: -25px;
-    width: 60%;
-    left: 105px;
+    width: 70%;
+    left: 70px;
     }
     }
   
@@ -447,6 +456,7 @@ li{
 }
 
 .surveying{
+    margin-bottom: 60px;
   h3{
       font-size: 30px;
       @include position(absolute,50% null null 50%);
@@ -467,15 +477,28 @@ li{
 
 .surveying-info{
     position: absolute;
-    bottom: 0;
+    bottom: -40px;
     left: 50%;
     padding: 40px;
     width: 50%;
     text-align: justify;
     background-color: #fff;
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0);
 }
 
 .top-spacings{ padding-top: 80px;}
 
+.thumbs{ padding: 0 30px !important;}
+
+.support-img{
+    img{
+        margin: 0 auto;
+    }
+}
+
+.nobold{
+    a{
+        font-weight: 400;
+    }
+}
 //home//

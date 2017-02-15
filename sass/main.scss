@@ -226,6 +226,8 @@ a,
 
 .slide-down { margin-top: 15% !important; }
 
+.mt15{ margin-top: 15px; }
+
 .sidemenu {
     background-color: #76D7C4;
     width: 100%;
@@ -242,7 +244,7 @@ a,
     color: #0B705C;
     font-family: share tech;
     &:hover {
-        color: #0B705C;
+        color: #fff;
     }
 }
 
@@ -359,7 +361,13 @@ a,
     margin-top: -110px;
 }
 
-.heading-about {  margin-top: 230px; }
+
+.heading-about {  
+    margin-top: 230px;
+    h1{
+       margin-bottom: 0;
+    }
+     }
 
 .man-heading{ font-size: 35px; }
 
@@ -390,6 +398,8 @@ a,
 .scott { padding: 0px 20px 0px 50px; }
 
 .alex { padding: 0px 50px 0px 20px; }
+
+.mt10{ margin-top: 0; }
 
 //scss for blog
 .blog-img {
@@ -433,9 +443,10 @@ padding-right: 80px;
 
 .main-content {
     background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9));
-    padding: 60px;
+    padding: 45px 60px;
 }
-.blog-img-1 { width: 100%;
+.blog-img-1 { 
+    margin-top: 15px;
     img {
         width: 100%;
         padding: 30px 0px;
@@ -449,6 +460,15 @@ padding-right: 80px;
     font-size: 18px;
     color: $brand-primary;
 }
+ .btn-view1{
+     &:after{
+    width: 7%;
+    content: "";
+    border: 2px solid #76D7C4;
+    position: absolute;
+    left: 47%;
+    }
+ }
 .sep-22 {
     font-size: 20px;
     font-weight: bold;
@@ -460,7 +480,7 @@ padding-right: 80px;
     color: #76D7C4;
 }
 
-.h35 { min-height: 70px; }
+.h35 { min-height: 50px; }
 
 .section-2 {
     .thumbnail {
@@ -529,6 +549,10 @@ padding-right: 80px;
 .map-form {
     color: $brand-primary;
     font-size: 18px;
+    label{
+ font-weight: 400;
+    }
+   
 }
 .form-horizontal .control-label {
      padding-left: 7px;
@@ -716,12 +740,15 @@ p.step.step-left:after {
 
 .dropdown-menu{ width: 100%; }
 
+.marg40{ margin: 40px 0;}
+
 .member-form-m30{  margin-top: 35px; }
 
 .member-right{ margin-right:10px; }
 
 .coupon-box{
     padding: 0px 15px;
+    height: 35px;
     border: 1px solid $brand-primary;
 }
 .signup-container {
@@ -916,6 +943,9 @@ p.step.step-left:after {
 }
 
 //scss for service
+
+.paddings{ padding: 40px 60px !important; }
+
 .m-50 { margin-top:20px; }
 
 .capture { margin: 25px 0px; }
@@ -974,12 +1004,17 @@ p.step.step-left:after {
     margin-top: -110px;
 }
 
-.support-heading { padding-top: 200px; }
+.support-heading { 
+    padding-top: 200px;
+    
+    h1{
+        margin-bottom: 0;
+    } }
 
 .support-content {
     background-color: white;
     padding: 60px;
-    margin: 15px 30px 0px 30px;
+    margin: 0px 30px 0px 30px;
 }
 
 .support-list {
@@ -1018,7 +1053,7 @@ p.step.step-left:after {
 .support-3 { margin-top: 50px; }
 
 .makeActive {
-    padding: 40px 0px;
+    padding: 40px 0 0;
     .active {
         p { 
              position: relative;
