@@ -166,44 +166,50 @@ Autonomous</p>
             <h3 class="text-center">Choose Your Package</h3>
          <div class="tab">
                   <ul class="list-inline row-flex">
-                      <li class="tab-item  pointer text-center relative col-flex {{classa}}" ng-click="tabchange('design',1)">
+                      <li class="text-center view-data" ng-click="viewDetail = 1;" ng-class="{'active': viewDetail==1, '': viewDetail!==1}">
+                         <div class="support-icon">
                         <h5 class="text-uppercase">Package 1</h5>
                         <h6>UAV ONLY (Default)</h6>
+                         </div>
                      </li> 
 
-                     <li class="tab-item  pointer  text-center  relative  col-flex {{classb}}" ng-click="tabchange('trim',2)">               
-                        <h5 class="text-uppercase"> Package 2</h5>
-                           <h6>UAV WITH SINGLE ROVER</h6>
+                     <li class="text-center view-data" ng-click="viewDetail=2;" ng-class="{'active': viewDetail==2, '': viewDetail!==2}">               
+                         <div class="support-icon">
+                           <h5 class="text-uppercase"> Package 2</h5>
+                             <h6>UAV WITH SINGLE ROVER</h6>
+                         </div>
                      </li>
 
-                     <li class="tab-item  pointer text-center  relative  col-flex {{classc}}" ng-click="tabchange('team',3)">
+                     <li class="text-center view-data" ng-click="viewDetail=3;" ng-class="{'active': viewDetail==3, '': viewDetail!==3}">
+                        <div class="support-icon">
                         <h5 class="text-uppercase">Package 3</h5>
                            <h6>UAV WITH DUAL ROVERS</h6>
+                        </div>
                      </li>
                   </ul>
                </div>
-            <div class="design" ng-show="tab=='design'">
+            <div class="design" ng-show="viewDetail = 1">
                <div class="pack-one text-center">
                    <div class="image-one inline-block">
-<img src="img/product/image8.png" class="img-responsive" alt="">
+                    <img src="img/product/image8.png" class="img-responsive" alt="">
                    </div>
                     <div class="image-one inline-block">
-              <img src="img/product/image9.png" class="img-responsive" alt="">         
+                    <img src="img/product/image9.png" class="img-responsive" alt="">         
                    </div>
                </div>
                <div class="pad-overall">
-  <h5 class="text-center text-uppercase">uav only</h5>
+                <h5 class="text-center text-uppercase">uav only</h5>
                 <button class="button text-uppercase">buy now</button>
                </div>
               
                </div>
-                             <div class="design" ng-show="tab=='trim'">
+                <div class="design" ng-show="viewDetail=2">
               <h5>UAV With Dual Rovers</h5>
               <div class="uav-inner">
                   <div class="row">
                       <div class="col-md-5">
                           
-<h6>Comes with:</h6>
+              <h6>Comes with:</h6>
               <ul>
                   <li>UAV with dual rovers</li>
                   <li>Septentrio ALTUS APS3G Smart GPS Antenna</li>
@@ -212,11 +218,11 @@ Autonomous</p>
                       </div>
                      
                       <div class="col-md-7">
- <ul class="list-inline uav-images">
+                  <ul class="list-inline uav-images">
                   <li><img src="img/product/image8.png" class="img-responsive" alt=""></li>
                   <li><img src="img/product/imagess.png" class="img-responsive" alt=""></li>
                   <li><img src="img/product/image9.png" class="img-responsive" alt=""></li>
-              </ul>
+                 </ul>
                       </div>
                   </div>
               </div>
@@ -232,7 +238,7 @@ Autonomous</p>
              
                </div>
                
-                       <div class="design" ng-show="tab=='team'">
+                       <div class="design" ng-show="viewDetail=3">
               <h5>UAV With Dual Rovers</h5>
               <div class="uav-inner">
                   <div class="row">
@@ -247,7 +253,7 @@ Autonomous</p>
                       </div>
                      
                       <div class="col-md-7">
- <ul class="list-inline uav-images">
+                  <ul class="list-inline uav-images">
                   <li><img src="img/product/image8.png" class="img-responsive" alt=""></li>
                   <li><img src="img/product/imagess.png" class="img-responsive" alt=""></li>
                   <li><img src="img/product/image9.png" class="img-responsive" alt=""></li>
