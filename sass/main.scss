@@ -228,13 +228,7 @@ a,
     background: #fff;
     margin: 5px;
 }
- .list-padding{
-     .list-inline > li {
-    display: inline-block;
-    padding-left: 10px;
-    padding-right: 10px;
-}
- }
+ 
 .slide-down { margin-top: 15% !important; }
 
 .mt15{ margin-top: 15px; }
@@ -309,17 +303,23 @@ a,
 .header-list {
     margin-top: 10px;
     color: white;
-    li{ font-weight: 700 
+    li{ 
+        font-weight: 700;
+        padding: 3px 15px !important;
+        font-size: 16px;
     }
 }
 
 .btn-join { 
     background-color: #76D7C4;
-    color:white;
+    color:black;
     padding: 2px 0px;
+    &:hover{
+        color:white;
+    }
  }
 
- .btn-white{ color:white; }
+ .btn-white{ color:#76D7C4; }
 
 .header-logo {
     position: absolute;
@@ -471,6 +471,7 @@ padding-right: 80px;
     background: transparent;
     border-bottom: 2px solid #72cac2;;
     font-size: 18px;
+    font-weight: 400;
     color: $brand-primary;
 }
  .btn-view1{
@@ -490,7 +491,8 @@ padding-right: 80px;
 
 .august {
     font-size: 15px;
-    color:  #5aaba4;;
+    color:  #5aaba4;
+    font-family: share tech;
 }
 
 .h35 { min-height: 50px; }
@@ -797,7 +799,7 @@ p.step.step-left:after {
 .coupon-box{
     padding: 0px 15px;
     height: 35px;
-    border-bottom: 2px solid rgba(5, 77, 73, 0.5);
+    border: 2px solid rgba(5, 77, 73, 0.5);
 }
 .signup-container {
     background: white;
@@ -811,6 +813,7 @@ p.step.step-left:after {
     font-family: share tech;
     padding-top: 10px;
     width: 100%;
+    padding-left: 6px;
 }
 
 .member-col {
@@ -944,6 +947,10 @@ p.step.step-left:after {
 }
 .data-padding{ padding-top: 10px; }
 
+.privacy-ml{
+    ul{  margin-left: -20px; }
+    li{ padding-left: 10px;}
+}
 //scss fot terms
 .bg-terms {
     background: url("../img/Terms.jpg");

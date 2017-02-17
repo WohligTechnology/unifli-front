@@ -159,28 +159,28 @@ Autonomous</p>
           </div>
                 
             </div>
-
-       
         </div>
-        <div class="package">
+
+    <div class="package">
             <h3 class="text-center">Choose Your Package</h3>
-         <div class="tab">
+         <div class="tab makeActive-service" ng-init="viewDetail=1">
+                
                   <ul class="list-inline row-flex">
-                      <li class="text-center view-data" ng-click="viewDetail = 1;" ng-class="{'active': viewDetail==1, '': viewDetail!==1}">
+                      <li class="package-bg col-flex text-center view-data"  ng-click="viewDetail = 1;" ng-class="{'active': viewDetail==1, '': viewDetail!==1}">
                          <div class="support-icon">
                         <h5 class="text-uppercase">Package 1</h5>
                         <h6>UAV ONLY (Default)</h6>
                          </div>
                      </li> 
 
-                     <li class="text-center view-data" ng-click="viewDetail=2;" ng-class="{'active': viewDetail==2, '': viewDetail!==2}">               
+                     <li class="package-bg col-flex  text-center  view-data" ng-click="viewDetail=2;" ng-class="{'active': viewDetail==2, '': viewDetail!==2}">               
                          <div class="support-icon">
                            <h5 class="text-uppercase"> Package 2</h5>
                              <h6>UAV WITH SINGLE ROVER</h6>
                          </div>
                      </li>
 
-                     <li class="text-center view-data" ng-click="viewDetail=3;" ng-class="{'active': viewDetail==3, '': viewDetail!==3}">
+                     <li class="package-bg col-flex text-center view-data" ng-click="viewDetail=3;" ng-class="{'active': viewDetail==3, '': viewDetail!==3}">
                         <div class="support-icon">
                         <h5 class="text-uppercase">Package 3</h5>
                            <h6>UAV WITH DUAL ROVERS</h6>
@@ -188,7 +188,9 @@ Autonomous</p>
                      </li>
                   </ul>
                </div>
-            <div class="design" ng-show="viewDetail = 1">
+
+
+            <div class="design" ng-show="viewDetail==1">
                <div class="pack-one text-center">
                    <div class="image-one inline-block">
                     <img src="img/product/image8.png" class="img-responsive" alt="">
@@ -201,17 +203,19 @@ Autonomous</p>
                 <h5 class="text-center text-uppercase">uav only</h5>
                 <button class="button text-uppercase">buy now</button>
                </div>
-              
-               </div>
-                <div class="design" ng-show="viewDetail=2">
-              <h5>UAV With Dual Rovers</h5>
+            </div>
+
+
+
+    <div class="design" ng-show="viewDetail==2">
+              <h5>UAV With Single Rovers</h5>
               <div class="uav-inner">
                   <div class="row">
                       <div class="col-md-5">
                           
               <h6>Comes with:</h6>
               <ul>
-                  <li>UAV with dual rovers</li>
+                  <li>UAV with single rovers</li>
                   <li>Septentrio ALTUS APS3G Smart GPS Antenna</li>
                   <li>Juniper Allegro 2 GPS Field Controller</li>
               </ul>
@@ -227,24 +231,24 @@ Autonomous</p>
                   </div>
               </div>
               <div class="uav-inner">
-<h6>Septentrio ALTUS APS3G</h6>
-<p>The ALTUS APS3G is a high precision GNSS receiver that’s engineered for efficient and accurate surveying. Experience improved performance, superior battery life, razor sharp accuracy and incredible flexibility as your survey vastly different geographies. The ALTUS APS3G is highly compatible with multiple hardware and software solutions, and delivers high performance for more than a day with just a single battery charge. Comes with Bluetooth functionality, integrated UHF radio and the latest GNSS technology.</p>          
+              <h6>Septentrio ALTUS APS3G</h6>
+              <p>The ALTUS APS3G is a high precision GNSS receiver that’s engineered for efficient and accurate surveying. Experience improved performance, superior battery life, razor sharp accuracy and incredible flexibility as your survey vastly different geographies. The ALTUS APS3G is highly compatible with multiple hardware and software solutions, and delivers high performance for more than a day with just a single battery charge. Comes with Bluetooth functionality, integrated UHF radio and the latest GNSS technology.</p>          
               </div>
               <div class="uav-inner">
-<h6>Juniper Allegro 2</h6>
-   <p>Ergonomically styled, with a glove-friendly QWERTY + numeric keyboard that’s perfect for fast data entry and faster processing, the quintessential industry favorite Allegro 2 now comes with upgraded connectivity, battery power, display visibility, and a better touchscreen. Crafted for high volume data collection and maximum efficiency, the Allegro 2 remains the standard for drone data collection and analysis globally.</p>            
+             <h6>Juniper Allegro 2</h6>
+             <p>Ergonomically styled, with a glove-friendly QWERTY + numeric keyboard that’s perfect for fast data entry and faster processing, the quintessential industry favorite Allegro 2 now comes with upgraded connectivity, battery power, display visibility, and a better touchscreen. Crafted for high volume data collection and maximum efficiency, the Allegro 2 remains the standard for drone data collection and analysis globally.</p>            
               </div>
-            <button class="button text-uppercase">buy now</button>
-             
-               </div>
+              <button class="button text-uppercase">buy now</button>
+       </div>
                
-                       <div class="design" ng-show="viewDetail=3">
+
+
+        <div class="design" ng-show="viewDetail==3">
               <h5>UAV With Dual Rovers</h5>
-              <div class="uav-inner">
+                <div class="uav-inner">
                   <div class="row">
-                      <div class="col-md-5">
-                          
-<h6>Comes with:</h6>
+                      <div class="col-md-5">   
+                       <h6>Comes with:</h6>
               <ul>
                   <li>UAV with dual rovers</li>
                   <li>Septentrio ALTUS APS3G Smart GPS Antenna</li>
@@ -262,17 +266,16 @@ Autonomous</p>
                   </div>
               </div>
               <div class="uav-inner">
-<h6>Septentrio ALTUS APS3G</h6>
-<p>The ALTUS APS3G is a high precision GNSS receiver that’s engineered for efficient and accurate surveying. Experience improved performance, superior battery life, razor sharp accuracy and incredible flexibility as your survey vastly different geographies. The ALTUS APS3G is highly compatible with multiple hardware and software solutions, and delivers high performance for more than a day with just a single battery charge. Comes with Bluetooth functionality, integrated UHF radio and the latest GNSS technology.</p>          
+              <h6>Septentrio ALTUS APS3G</h6>
+              <p>The ALTUS APS3G is a high precision GNSS receiver that’s engineered for efficient and accurate surveying. Experience improved performance, superior battery life, razor sharp accuracy and incredible flexibility as your survey vastly different geographies. The ALTUS APS3G is highly compatible with multiple hardware and software solutions, and delivers high performance for more than a day with just a single battery charge. Comes with Bluetooth functionality, integrated UHF radio and the latest GNSS technology.</p>          
               </div>
               <div class="uav-inner">
-<h6>Juniper Allegro 2</h6>
-   <p>Ergonomically styled, with a glove-friendly QWERTY + numeric keyboard that’s perfect for fast data entry and faster processing, the quintessential industry favorite Allegro 2 now comes with upgraded connectivity, battery power, display visibility, and a better touchscreen. Crafted for high volume data collection and maximum efficiency, the Allegro 2 remains the standard for drone data collection and analysis globally.</p>            
+              <h6>Juniper Allegro 2</h6>
+              <p>Ergonomically styled, with a glove-friendly QWERTY + numeric keyboard that’s perfect for fast data entry and faster processing, the quintessential industry favorite Allegro 2 now comes with upgraded connectivity, battery power, display visibility, and a better touchscreen. Crafted for high volume data collection and maximum efficiency, the Allegro 2 remains the standard for drone data collection and analysis globally.</p>            
               </div>
-            <button class="button text-uppercase">buy now</button>
-             
-               </div> <div class="support-icon">
-        </div>
+              <button class="button text-uppercase">buy now</button>  
+         </div> 
+
 
     </div>
 
