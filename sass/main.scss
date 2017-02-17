@@ -9,7 +9,7 @@
 
 /* Bootstrap Variables Goes Here */
 
-$brand-primary: #0B5345 !default;
+$brand-primary: #04423b !default;
 $brand-success: #ff8400!default;
 $brand-warning: #ffec39 !default;
 $brand-danger: #fc483f !default;
@@ -66,13 +66,17 @@ p {
     }
 }
 .inline-block  { display: inline-block; }
+
 .float-r {
     float: right;
 }
 
+.underline{ border-bottom: 1px solid #4b8381 ;}
+
 .float-l {
     float: left;
 }
+.weight-700 { font-weight: 700 }
 
 .m-0 {
     margin: 0;
@@ -80,6 +84,7 @@ p {
 
 .font-bold {
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .btn-main {
@@ -223,7 +228,13 @@ a,
     background: #fff;
     margin: 5px;
 }
-
+ .list-padding{
+     .list-inline > li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+ }
 .slide-down { margin-top: 15% !important; }
 
 .mt15{ margin-top: 15px; }
@@ -298,7 +309,8 @@ a,
 .header-list {
     margin-top: 10px;
     color: white;
-    li{ font-weight: 700 }
+    li{ font-weight: 700 
+    }
 }
 
 .btn-join { 
@@ -455,8 +467,9 @@ padding-right: 80px;
 
 .btn-view {
     border: none;
+    padding-bottom: 2px;
     background: transparent;
-    border-bottom: 2px solid #76D7C4;
+    border-bottom: 2px solid #72cac2;;
     font-size: 18px;
     color: $brand-primary;
 }
@@ -464,7 +477,7 @@ padding-right: 80px;
      &:after{
     width: 7%;
     content: "";
-    border: 2px solid #76D7C4;
+    border: 2px solid #72cac2;;
     position: absolute;
     left: 47%;
     }
@@ -472,12 +485,12 @@ padding-right: 80px;
 .sep-22 {
     font-size: 20px;
     font-weight: bold;
-    color: #76D7C4;
+    color:  #5aaba4;;
 }
 
 .august {
     font-size: 15px;
-    color: #76D7C4;
+    color:  #5aaba4;;
 }
 
 .h35 { min-height: 50px; }
@@ -547,16 +560,16 @@ padding-right: 80px;
     margin: 25px 30px 0px 30px;
 }
 .map-form {
-    color: $brand-primary;
+    color: #04423b;
     font-size: 18px;
     label{
  font-weight: 400;
     }
-   
 }
+
 .form-horizontal .control-label {
      padding-left: 7px;
-     padding-top: 0px;
+     padding-top: 5px;
      }
 
 .map-border { border: 1px solid $brand-primary; }
@@ -591,10 +604,10 @@ padding-right: 80px;
 }
 
 .step {
-    font-size: 27px;
+    font-size: 32px;
     color: white;
-    background: $brand-primary;
-    padding: 0px 12px;
+    background: #4b8381;
+    padding: 0px 20px;
     margin: 0;
     font-family: share tech;
     display: inline-block;
@@ -625,48 +638,48 @@ padding-right: 80px;
 p.step-right { position:relative}
 
 p.step-right:after {
-    border: 1px dashed $brand-primary ;
+    border: 1px dashed #4b8381;
     content: ' ';
-    width:540px;
+    width:530px;
     position: absolute;
-    top: 17px;
+    top: 20px;
 }
 
 .step2{ position:relative; }
 
 p.step.step-left:before {
-    border: 1px dashed $brand-primary ;
+    border: 1px dashed #4b8381;
     bottom: 212px;
-    height: 175px;
+     height: 185px;
     position: absolute;
     content: " ";
-    left: 65%;
+    left: 66%;
 }
 .step-3{ position: relative; }
 
 p.step.step-top:before {
-    border: 1px dashed #0B5345;
+    border: 1px dashed #4b8381;
     bottom: 300px;
-    height: 173px;
-    position: absolute;
-    content: " ";
-    left: 39%;
-}
-p.step.step-left:after {
-    border: 1px dashed #0B5345;
-    content: ' ';
-    width: 550px;
-    position: absolute;
-    top: 16px;
-    left: -30px;
-}
-  p.step.step-2-top:before {
-    border: 1px dashed #0B5345;
-    bottom: 42px;
     height: 190px;
     position: absolute;
     content: " ";
-    left: 39%;
+    left: 42%;
+}
+p.step.step-left:after {
+    border: 1px dashed #4b8381;
+    content: ' ';
+    width: 530px;
+    position: absolute;
+    top: 16px;
+    left: -8px;
+}
+  p.step.step-2-top:before {
+    border: 1px dashed #4b8381;
+    bottom: 42px;
+    height: 206px;
+    position: absolute;
+    content: " ";
+    left:50%;
   }
 
 //scss for member-page1
@@ -677,6 +690,7 @@ p.step.step-left:after {
     width: 100%;
     margin-top: -110px;
 }
+.pl-10{ padding-left: 10px !important;}
 
 .member-p-50 {  padding: 50px; }
 
@@ -701,6 +715,7 @@ p.step.step-left:after {
         padding-top: 15px;
         font-size: 22px;
         color: $brand-primary;
+        letter-spacing: 1px;
     }
     .table>tbody>tr>td {
         font-size: 18px;
@@ -708,6 +723,8 @@ p.step.step-left:after {
         padding-left: 20px;
     }
     ul { padding: 20px; }
+    
+    li{ font-size: 18px !important}
 }
 
 .member-font-1 {
@@ -723,18 +740,49 @@ p.step.step-left:after {
     }
     font-size: 28px;
     font-family: share tech;
-    padding: 0px 45px;
+    padding: 5px 60px;
     color:$brand-primary;
     background: white;
 }
 
 .p-80 { padding-bottom: 75px; }
 
+.checkbox input[type="checkbox"] + label span {
+    width: 18px !important;
+    height: 18px !important;
+    margin: 5px;
+    border: 1px solid #0B5345;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: middle;
+}
 //scss for member 
 .dropdown-member {
     width: 100%;
     background: transparent;
-    border-bottom: 1px solid #A0EFDF;
+    border: none;
+    border-bottom: 2px solid rgba(5, 77, 73, 0.5) !important;
+    -webkit-appearance: none;
+    position: relative;
+}
+.dropdown-member:after {
+    content:"\f078";   
+    font-family: "FontAwesome";
+    font-size: 10px;
+    color:#aaa;
+    right:8px; top:3px;
+    padding:0 0 1px;
+    position:absolute;
+    pointer-events:none;
+}
+.dropdown-member:before {
+    content:'';
+    right:4px; top:0px;
+    width:20px; height:16px;
+    background:#fff;
+    position:absolute;
+    pointer-events:none;
+    display:block;
 }
 .dropdown-margin { margin-top: 30px;}
 
@@ -749,7 +797,7 @@ p.step.step-left:after {
 .coupon-box{
     padding: 0px 15px;
     height: 35px;
-    border: 1px solid $brand-primary;
+    border-bottom: 2px solid rgba(5, 77, 73, 0.5);
 }
 .signup-container {
     background: white;
@@ -757,8 +805,8 @@ p.step.step-left:after {
 }
 .member-input {
     border: none;
-    border-bottom: 1px solid #A0EFDF;
-    color: grey;
+    border-bottom: 2px solid rgba(5, 77, 73, 0.5);
+    color: #054d49;
     font-size: 20px;
     font-family: share tech;
     padding-top: 10px;
@@ -1074,15 +1122,15 @@ p.step.step-left:after {
 
 // scss for footer
 footer {
-    background: #1C2833;
+    background: #0f1613;
     p {
         margin: 0;
         font-size: 16px;
-        color: #76D7C4;
+        color:  #74ada9;
         padding: 18px 0px;
     }
     .icon {
-        color: #76D7C4;
+        color:  #74ada9;
         padding: 12px 0px;
         font-size: 24px;
     }

@@ -73,6 +73,8 @@
             vertical-align: middle;
             i{
                 color: #fff;
+                font-size: 50px;
+                padding: 10px;
             }
         }
     }
@@ -100,8 +102,11 @@
     font-weight: 600;
         }
     }
+.padding { padding: 0 50px; }
 
-.padding{ padding: 0 50px;}
+.padding-r{ padding-right: 80px;}
+
+.padding-l{ padding-left: 80px;}
 
 .flight{ background-image: url("../img/product/v1.png");}
 
@@ -513,7 +518,7 @@ li{
 
              input[type="radio"]+label {
                  color: $brand-primary;
-                 font-size: 13px;
+                 font-size: 18px;
              }
 
              input[type="radio"]+label span {
