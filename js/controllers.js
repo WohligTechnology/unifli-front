@@ -91,11 +91,22 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.formSubmitted = true;
     }
 })
-.controller('AboutusCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('AboutusCtrl', function($scope, TemplateService, NavigationService, $timeout, $anchorScroll,$location) {
     $scope.template = TemplateService.changecontent("aboutus"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Aboutus"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
+
+$scope.gotoBottom = function() {
+     // set the location.hash to the id of
+      // the element you wish to scroll to.
+       $location.hash('at-footer');
+        // call $anchorScroll() 
+        $anchorScroll(); 
+    };
+    $timeout(function() {
+        $scope.gotoBottom();
+    },100);
 
 })
 
@@ -294,6 +305,15 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.loginclose =function(){
         $scope.loginModal.close();
     };
+       $(window).scroll(function () {
+            var scroll = $(window).scrollTop();
+
+            if (scroll >= 100) {
+                $(".img-logo").addClass("small-logo");
+            } else {
+                $(".img-logo").removeClass("small-logo");
+            }
+        });
 
 
 })

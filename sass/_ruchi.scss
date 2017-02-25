@@ -11,6 +11,11 @@
         color: $brand-primary !important; }
 }
 
+
+.product-type {
+    margin-top: 32% !important;
+}
+
 .button{
     font-family: 'Share Tech', sans-serif;
     font-weight: 700;
@@ -20,7 +25,7 @@
 }
 .margin0{ margin: 0 !important;}
 
-.mb{ margin-bottom: 20px;}
+.mb{ margin-bottom: 20px !important;}
 
 .mb10{ margin-bottom: 10px; }
 
@@ -80,8 +85,8 @@
                    }
    .video-icon{
     position: absolute;
-    top: 50%;
-    left: 60%;
+    top: 40%;
+    left: 62%;
     transform: translate(-50%,-50%);
    }
     .video{
@@ -107,11 +112,16 @@
             }
         }
     }
+.product-margin{    margin: 0 60px; }
+
+.top-spacing-product{ padding:30px 0 50px 0; }
+
+.top-product{ margin-top:30px;}
 
     .features{
     background-color: #fff;
     margin: 0 20px;
-    padding: 60px 0;
+    padding-top: 60px;
     }
 
     .feature-min{ padding: 20px 100px; }
@@ -211,17 +221,34 @@
     }
 }
 
+// .uav-images{
+//     li{
+//         height: auto;
+       
+//         vertical-align: middle;
+//         margin: 0 10px;
+//         img{
+//             width: 100%;
+//         }
+//     }
+// }
 .uav-images{
-    li{
-        height: auto;
-        width: 150px;
-        vertical-align: middle;
-        margin: 0 10px;
-        img{
-            width: 100%;
-        }
-    }
+    padding-left: 0px !important;
+    li {
+    height: auto;
+    vertical-align: middle;
+    // margin: 0 10px;
+    flex:1;
 }
+    .uav-inner ul {
+    padding: 0 20px;
+    display: flex;
+   }
+   } 
+
+.drone-width{    width: 280px;}
+
+.remote-width{    width: 135px;}//width:128px;
 
 .no-pad{
     padding: 0 50px;
@@ -289,7 +316,7 @@
 .bulb { background-image: url("../img/aboutus/bulb.png");}
 
 .story-info{
-    width: 75%;
+    width: 77%;
     display: inline-block;
     vertical-align: middle;
     text-align: left;
@@ -373,7 +400,10 @@ li{
     border-radius: 100%;
     margin: 5px auto;
 }
-//.contact{     margin-top: 35%;}
+.contact{   
+    margin-top: 38%;
+    color: #61bfb6 !important
+}
 
 .top-spacing{ 
     padding-top: 60px; 
@@ -390,7 +420,7 @@ li{
         color: #289387 !important;;
         &:after{
     content: "";
-    border: 1px solid #76D7C4;
+    border: 1px solid #289387;
     width: 48%;
     position: absolute;
     top: 53px;
@@ -428,6 +458,10 @@ li{
     }
 }
 .home-about{  padding-left: 48px; }
+
+.more-info-drones{
+    p{ padding-right:100px;}
+}
 
 .newsletter{
     margin: 40px 0;
@@ -529,7 +563,9 @@ li{
     transform: translate(-50%, 0);
 }
 
-.top-spacings{ padding-top: 80px;}
+.top-spacings{  padding-top: 80px; }
+
+.left-spacing{ padding-left:100px; }
 
 .thumbs{ padding: 0 30px !important;}
 

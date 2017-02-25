@@ -44,13 +44,13 @@ h4{font-size:20px; }
 
 p,li,span{
    font-family: 'Abel', sans-serif;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 400;
      color: $brand-primary;
 }
 
 p {
-    font-size: 14px;
+    font-size: 16px;
     color: $brand-primary;
     a {
         color: $brand-primary;
@@ -196,10 +196,6 @@ a,
 
 /* Start writing sass here */
 
-.navbar-default {
-    border: none;
-}
-
 .content {
     min-height: 450px;
 }
@@ -207,10 +203,6 @@ a,
 .full-img {
     width: 100%;
     display: block;
-}
-
-.navbar-default {
-    background-color: transparent;
 }
 //scss for header
 .icon-bar {
@@ -235,18 +227,28 @@ a,
     z-index: 1;
 }
 
-.navbar-default {
-       background: rgba(4, 66, 59, 0.23);
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999999;
 }
 
+.navbar-default {
+    background: linear-gradient(#13312b, rgba(29, 62, 56, 0.87), rgba(30, 63, 57, 0));
+    margin: 0;
+    border: none !important;
+    padding-bottom: 27px
+}
 
 .navbar {
     position: relative;
     min-height: 50px;
     margin-bottom: 20px;
     border: 1px solid transparent;
-    z-index: 9;
 }
+
 .header-btn {
     display: block;
     font-size: 30px;
@@ -335,10 +337,15 @@ a,
 }
 
 .img-logo {
-    width: 250px;
-    margin-top: -88px
+    // width: 250px;
+    height: 140px;
+    margin-top: -88px;
+    @include transition(all 300ms linear);
 }
-
+.img-logo.small-logo {
+        height: 90px;
+        @include transition(all 300ms linear);
+    }
 
 //scss for modal login
 .modal-heading {   color: white !important; }
@@ -379,7 +386,7 @@ a,
     margin-top: -110px;
 }
 .heading-about {  
-    margin-top: 230px;
+      padding-top: 42%;
     h1{ margin-bottom: 0; }
      }
 
@@ -387,7 +394,7 @@ a,
 
 .block-2 {
     background-color: white;
-    margin: 40px 0px;
+    margin: 45px 0px;
     padding: 30px;
 }
 
@@ -397,6 +404,8 @@ a,
 }
 
 .p-50  { padding: 0 50px; }
+
+.p-120{ padding: 0 110px;}
 
 .photo {
     text-align: center;
@@ -421,7 +430,7 @@ a,
 }
 
 .blog-title {
-    padding-top: 160px;
+    padding-top: 260px;
     padding-bottom: 15px;
 }
 .m-l{ margin-left: 1px; }
@@ -534,16 +543,9 @@ padding-right: 80px;
 
 .section-1-img {
   margin-top: -110px;
-  background-image: url("../img/sections.jpg");
+  background-image: url("../img/section1.png");
   position: relative;
-}
-
-.sec-content { @include position(absolute,40% null null 12%); }
-
-.bg-img-sec2 { background-image: url("../img/section2.jpg"); }
-
-
-  
+} 
 
 //scss for google-map
 .bg-calculator {
@@ -554,7 +556,7 @@ padding-right: 80px;
     margin-top: -110px;
 }
 .heading-calculator {
-    margin-top: 250px;
+    margin-top:42%;
     padding: 0 45px;
 }
 .crossroad { 
@@ -666,8 +668,8 @@ h2.step-right:after {
 
 h2.step.step-left:before {
     border: 1px dashed #4b8381;
-    bottom: 185px;
-    height: 171px;
+    bottom: 223px;
+    height: 203px;
     position: absolute;
     content: " ";
     left: 68%;
@@ -676,8 +678,8 @@ h2.step.step-left:before {
 
 h2.step.step-top:before {
     border: 1px dashed #4b8381;
-    bottom: 264px;
-    height: 187px;
+    bottom: 309px;
+    height: 204px;
     position: absolute;
     content: " ";
     left: 44%;
@@ -693,7 +695,7 @@ h2.step.step-left:after {
   h2.step.step-2-top:before {
     border: 1px dashed #4b8381;
     bottom: 42px;
-    height: 190px;
+    height: 228px;
     position: absolute;
     content: " ";
     left: 50%;
@@ -707,9 +709,12 @@ h2.step.step-left:after {
     width: 100%;
     margin-top: -110px;
 }
+.member-heading {padding-top:28%;}
+
 .pl-10{ padding-left: 10px !important;}
 
 .member-p-50 {  padding: 50px; }
+
 
 .member-p-20 { padding: 20px 0px; }
 
@@ -719,6 +724,8 @@ h2.step.step-left:after {
     background: white;
     margin: 10px 30px 40px 30px;
 }
+
+.mem-container-padding{ padding: 30px 60px 40px 60px; }
 
 .member-table {
     tr:nth-child(12n) {
@@ -777,6 +784,13 @@ h2.step.step-left:after {
     vertical-align: middle;
 }
 //scss for member 
+.bg-member {
+    background: url("../img/member.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    margin-top: -110px;
+}
 .dropdown-member {
     width: 100%;
     background: transparent;
@@ -800,13 +814,14 @@ h2.step.step-left:after {
 .member-right{ margin-right:10px; }
 
 .coupon-box{
-    padding: 0px 15px;
+    margin: 0px 18px;
     height: 35px;
-    border: 2px solid rgba(5, 77, 73, 0.5);
+    border: 2px solid #04423b;
 }
+
 .signup-container {
     background: white;
-    margin: 10px 35px 70px 35px;
+    margin: 0px 35px 70px 35px;
 }
 .member-input {
     border: none;
@@ -854,7 +869,7 @@ h2.step.step-left:after {
     }
     position: absolute;
     right: 5px;
-    top: -10px; 
+    top: 0px; 
 }
 
 /* checkbox aspect */
@@ -906,7 +921,7 @@ h2.step.step-left:after {
 }
 .mycart-heading {
     color: $brand-primary !important;
-    padding-top: 230px;
+    padding-top: 30%;
 }
 
 .mycart-container { padding: 43px; }
@@ -984,7 +999,7 @@ h2.step.step-left:after {
     background: white;
  }
 .policy-heading {
-    padding-top: 250px;
+       padding-top: 25%;
     h1{ color:$brand-primary !important}
 }
 .data-padding{ padding-top: 10px; }
@@ -1002,7 +1017,7 @@ h2.step.step-left:after {
     margin-top: -110px;
 }
 .term-heading{
-    padding-top: 220px;
+    padding-top:25%;
     padding-bottom: 20px;
 }
 
@@ -1026,19 +1041,16 @@ h2.step.step-left:after {
    background-position: center center;
    position: relative;
    height: 210vh;
-   h2{ font-weight: 400 !important}
 }
 
-.sec-content { @include position(absolute,24% null null 16%); }
-
-// .bg-img-sec2 {
-//     background-image: url("../img/section2.jpg");
-//     background-repeat: no-repeat;
-//     background-size: cover;
-//     background-position: center center;
-//     width: 100%;
-//     height: 120vh;
-// }
+.cloud{
+    position: absolute;
+    right:0;
+}
+.sec-content {
+     @include position(absolute,30% null null 16%);
+      h2{ font-weight: 600 !important }
+     }
 
 //scss for service
 
@@ -1046,7 +1058,7 @@ h2.step.step-left:after {
 
 .m-50 { margin-top:20px; }
 
-.capture { margin: 25px 0px; }
+.capture { margin-top: 30px; }
 
 .bg-service {
     background: url("../img/Services.jpg");
@@ -1115,8 +1127,12 @@ h2.step.step-left:after {
     margin-top: -110px;
 }
 
+.support-left{ padding-left: 30px;}
+
+.cad-left{ padding-left:40px; }
+
 .support-heading { 
-    padding-top: 200px;
+    padding-top: 54%;
     
     h1{ margin-bottom: 0;}
 
@@ -1134,6 +1150,7 @@ h2.step.step-left:after {
     color: $brand-primary;
     display: inline-block;
 }
+.li-family{  font-family:'share tech',sans-serif !important; }
 
 .p-78 { padding: 0 78px; }
 
