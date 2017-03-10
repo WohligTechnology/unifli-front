@@ -34,29 +34,58 @@
         font-size: 14px;
     }
     //common//
-    // //google-map-2//
-    // .proceed-button {
-    //     .btn-map {
-    //         width: 143px;
-    //     }
-    // }
-    // .icon-details,
-    // .crossroad {
-    //     padding: 0;
-    // }
-    // .bg-calculator {
-    //     margin-top: 0;
-    // }
-    // .heading-calculator {
-    //     margin-top: 45%;
-    //     padding: 0 25px;
-    // }
-    // .map-block-2 {
-    //     .icon-details {
-    //         text-align: center!important;
-    //     }
-    // }
-    // //google-map-2//
+   
+    //google-map-2//
+    .proceed-button {
+        .btn-map {
+            width: 143px;
+        }
+    }
+    .icon-details,
+    .crossroad {
+        padding: 0;
+    }
+    .bg-calculator {
+        margin-top: 0;
+    }
+    .heading-calculator {
+        margin-top: 45%;
+        padding: 0 25px;
+    }
+    .map-block-2 {
+        .icon-details {
+            text-align: center!important;
+        }
+    }
+    //google-map-2//
+    //member-page//
+    .member-table li {
+        font-size: 12px;
+    }
+    .table {
+        thead {
+            th {
+                font-size: 12px !important;
+            }
+        }
+        tbody {
+            tr {
+                td {
+                    font-size: 12px !important;
+                }
+            }
+        }
+    }
+    .member-container {
+        margin: 10px 0px 40px;
+    }
+    .mem-container-padding {
+        padding: 30px 20px;
+    }
+    .mtop-member {
+        padding-top: 70%;
+    }
+    //member-page//
 }
 
 @media (max-width: $screen-xs-max) {
@@ -161,6 +190,24 @@
         }
     }
     //footer
+    //header
+.btn-header{
+    margin: 0;
+    margin-top: 20px;
+}
+
+.header-logo{
+    img{
+        height: auto;
+    }
+}
+
+.header-list{
+    margin-top: 30px;
+}
+
+
+    //header//
     //blog-individual//
     .main-content {
         padding: 0 15px;
@@ -169,6 +216,26 @@
         padding-bottom: 20px;
     }
     //blog-individual//
+     //support-dm-2//
+
+.support-content {
+    background-color: white;
+    padding: 30px 20px 60px;
+    margin: 250px 0 0;
+}
+    //support-dm-2//
+
+
+    //support-dm//
+
+.cad-left,.p-40{ padding: 0; }
+
+ .mtop-member { padding-top: 70%;}
+
+    .unilfi-help{ margin-top: 0; }
+
+    //support-dm//
+
     //google-map-2//
     .map-content {
         margin: 0;
@@ -185,4 +252,5 @@
         margin-top: 45%;
         padding: 0 25px;
     }
+     //google-map-2//
 }
