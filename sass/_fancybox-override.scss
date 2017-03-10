@@ -39,11 +39,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
     opacity: 1 !important;
 }
 
-.fancybox-nav span {
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: center;
-}
+// .fancybox-nav span {
+//     background-repeat: no-repeat;
+//     background-size: contain;
+//     background-position: center;
+// }
 
 .fancybox-nav.fancybox-next span {
     background-image: url(../img/next.png);

@@ -5,7 +5,17 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
     $scope.menutitle = NavigationService.makeactive("Home"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
-
+     $scope.subscribe=function(email){
+       console.log("email",email);
+       if(email.email){
+         $scope.show = true;
+           $timeout(function() {
+                       $scope.show = false;
+                       $scope.subscribeForm = {};
+                   }, 2000);
+       }
+       
+     } 
     // $scope.mySlides = [
     //     'http://flexslider.woothemes.com/images/kitchen_adventurer_cheesecake_brownie.jpg',
     //     'http://flexslider.woothemes.com/images/kitchen_adventurer_lemon.jpg',
@@ -137,7 +147,7 @@ $scope.gotoBottom = function() {
     }
 })
 
-.controller('Support-DfmCtrl', function($scope, TemplateService, NavigationService, $timeout) {
+.controller('Support-DfmCtrl', function($scope, TemplateService, NavigationService, $timeout,$uibModal) {
     $scope.template = TemplateService.changecontent("support-dfm"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Support-Dfm"); //This is the Title of the Website
     TemplateService.title = $scope.menutitle;
@@ -149,6 +159,19 @@ $scope.gotoBottom = function() {
         console.log(data);
         $scope.formSubmitted = true;
     }
+
+    $scope.login =function(){
+        $scope.loginModal =$uibModal.open({
+          animation :true,
+          templateUrl:'views/content/Modal/login.html',
+          scope:$scope,
+          windowClass:"login-modal"
+
+        });
+    };
+    $scope.loginclose =function(){
+        $scope.loginModal.close();
+    };
 })
 .controller('supportDfm2Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("support-dfm-2"); //Use same name of .html file
@@ -247,19 +270,7 @@ $scope.gotoBottom = function() {
     TemplateService.title = $scope.menutitle;
     $scope.navigation = NavigationService.getnav();
 })
-.controller('MemberPage2Ctrl', function($scope, TemplateService, NavigationService, $timeout) {
-    $scope.template = TemplateService.changecontent("member-page-2"); //Use same name of .html file
-    $scope.menutitle = NavigationService.makeactive("MemberPage2"); //This is the Title of the Website
-    TemplateService.title = $scope.menutitle;
-    $scope.navigation = NavigationService.getnav();
 
-    $scope.formSubmitted = false;
-
-    $scope.submitForm = function(data) {
-        console.log(data);
-        $scope.formSubmitted = true;
-    }
-})
 .controller('Blog-IndividualCtrl', function($scope, TemplateService, NavigationService, $timeout) {
     $scope.template = TemplateService.changecontent("blog-individual"); //Use same name of .html file
     $scope.menutitle = NavigationService.makeactive("Blog-Individual"); //This is the Title of the Website
@@ -302,6 +313,7 @@ $scope.gotoBottom = function() {
 
         });
     };
+
     $scope.loginclose =function(){
         $scope.loginModal.close();
     };

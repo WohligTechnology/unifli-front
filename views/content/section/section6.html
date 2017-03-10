@@ -13,18 +13,22 @@
             <div class="row">
                 <div class="col-md-5">
   <div class="address inline-block top-spacings">
-        <h4 class="margin0">UNIFLI SA</h4>
+        <!--<h4 class="margin0">UNIFLI SA</h4>
             <h4 class="margin0">Route de Genève 38</h4>
               <h4 class="margin0">(Z.I. Châtelard Sud)</h4>
                 <h4 class="margin0">1033 Cheseaux-Lausanne</h4>
-                  <h4 class="margin0">Switzerland</h4>
+                  <h4 class="margin0">Switzerland</h4>-->
+         <h4 class="margin0">Unifli Aerosolutions LLC</h4>
+            <h4 class="margin0">2057 Via Concha</h4>
+              <h4 class="margin0">San Clemente CA 92673</h4>
             </div>
                 </div>
                 <div class="col-md-5">
                     <div class="address">
                     <div class="top-spacings nobold">
-                    <h4 class="margin0">Call us at <a href="tel:(510) 671-0693">(510) 671-0693</a></h4>
-                     <h4 class="margin0"> Or email us at<a href="mailto:info@unifli.com">info@unifli.com</a></h4>
+                    <h4 class="margin0">Call us at <a href="tel:(844) 7UNIFLI (786-4354)">(844) 7UNIFLI (786-4354)</a></h4>
+                     <h4 class="margin0"> Or email us at<br><a href="mailto:info@unifli.com"> info@unifli.aero</a></h4>
+                     <h4 class="margin0">Visit us at<a href="http://www.unifli.aero" target="_new">&nbsp;www.unifli.aero</a></h4>
                     </div>
                     </div>
                 </div>
@@ -32,9 +36,14 @@
             </div>
    <div class="newsletter">
         <label for="news">Sign up for our newsletter:</label>
-        <input type="text" id="news">
-             <button class="button  margin0">Submit</button>
-    </div>
+        <form ng-if="!show">
+        <input type="email" id="news" ng-model="formdata.email" required>
+             <button class="button  margin0" ng-click="subscribe(formdata)">Submit</button>
+        </form>
+       <div class="thanku" ng-if="show">
+        <p>Thank you for subscribing!</p>
+        </div>
+      </div>
         </div>
     </div>
    

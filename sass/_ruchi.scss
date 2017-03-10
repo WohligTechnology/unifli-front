@@ -1,4 +1,5 @@
 //product//
+.fancybox-skin{    margin-top: 105px !important;}
 
 .pads{ padding: 0 90px; }
 
@@ -7,13 +8,12 @@
     background-size: cover;
     margin-top: -110px;
 
-    h1{ 
-        color: $brand-primary !important; }
+    h1{ color: $brand-primary !important; }
 }
 
 
 .product-type {
-    margin-top: 32% !important;
+    margin-top: 28% !important;
 }
 
 .button{
@@ -183,6 +183,22 @@
 
 .feature-images { padding: 40px;}
 
+
+
+  .fancybox-nav span {
+    margin-top: 0px !important;
+    }
+
+.fancybox-nav {
+    top: -38px !important;
+}
+
+
+#fancybox-loading, .fancybox-close, .fancybox-next span, .fancybox-prev span {
+    background-image: url("../img/fancybox_sprite.png") !important;
+}
+
+
 .package{
     background-color: #e8f9f9;
     padding: 40px 60px;
@@ -248,7 +264,7 @@
 
 .drone-width{    width: 280px;}
 
-.remote-width{    width: 135px;}//width:128px;
+.remote-width{    width: 128px;}
 
 .no-pad{
     padding: 0 50px;
@@ -323,7 +339,7 @@
     p{
         margin: 0;
         color: #fff;
-        font-weight: 600;
+        //font-weight: 600;
         letter-spacing: normal;
         line-height: 27px;
     }
@@ -358,6 +374,7 @@
     height: 250px;
     display: block;
     margin: 0 auto;
+    padding-top: 135px;
 }
 
 
@@ -432,7 +449,7 @@ li{
 .read{
     border-bottom: 2px solid #fff;
     display: inline-block;
-    padding: 10px 0;
+    padding: 5px 0;
     font-size: 16px;
     color: #04423b;
     font-weight: 400;
@@ -441,7 +458,7 @@ li{
         outline: 0;
     }
     &:hover{
-        border-bottom: 2px solid #76D7C4;
+        border-bottom: 2px solid #5eb8ae;
     }
 }
 
@@ -500,10 +517,18 @@ li{
 
 .contact-section{
     background-image: url("../img/new/contact.png");
-    margin-top: -75px;
+    margin-top: -57px;
     h2{
         padding: 210px 20px 0 0;
     }
+    }
+.thanku p{   
+    display: block;
+    font-family: 'Abel', sans-serif;
+    font-weight: 400;
+    color: #0B5345;
+    font-size: 20px;
+    text-align: left;
     }
 
 // .fly{ margin-top: 30px; }
@@ -513,9 +538,10 @@ li{
 .fly-img{ margin-left: 15px;}
 
 .fc-img{
-    margin-top: -30px;
+    
+    margin-top: -63px;
     img{
-       margin: 0px auto 50px;
+       margin: 0px auto -10px;
     }
     h2{
         position: relative;
@@ -625,7 +651,7 @@ li{
 
            input[type="checkbox"]+label{
             color: $brand-primary;
-            font-size: 14px;
+            font-size: 16px;
             text-indent: 6px;
            }
            input[type="checkbox"]+label span{

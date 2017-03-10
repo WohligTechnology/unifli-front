@@ -89,11 +89,7 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'MemberCtrl'
         })
-            .state('member-page-2', {
-            url: "/member-page-2",
-            templateUrl: "views/template.html",
-            controller: 'MemberPage2Ctrl'
-        })
+
           .state('privacypolicy', {
             url: "/privacypolicy",
             templateUrl: "views/template.html",
@@ -159,7 +155,30 @@ firstapp.directive('fancybox', function($document) {
         }
     };
 });
+firstapp.directive('fancyboxBox', function ($document) {
+ return {
+   restrict: 'EA',
+   replace: false,
+   link: function (scope, element, attr) {
+     var $element = $(element);
+     var target;
+     if (attr.rel) {
+       target = $("[rel='" + attr.rel + "']");
+     } else {
+       target = element;
+     }
 
+     target.fancybox({
+       openEffect: 'fade',
+       closeEffect: 'fade',
+       closeBtn: true,
+       helpers: {
+         media: {}
+       }
+     });
+   }
+ };
+});
 firstapp.directive('autoHeight', function($compile, $parse) {
     return {
         restrict: 'EA',
