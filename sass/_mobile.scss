@@ -83,10 +83,7 @@ p,li,span,.btn{ font-size: 12px; }
     padding: 0 25px;
 }
 
-.map-block-2{
-    .icon-details{
- text-align: center!important;
-    }
+
    
 
 
@@ -94,10 +91,6 @@ p,li,span,.btn{ font-size: 12px; }
 }
 
 //google-map-2//
-
-
-
-}
 
 @media (max-width: $screen-sm-max) {
 //common//
@@ -113,17 +106,26 @@ h4{font-size:18px; }
 p,li,span,.btn{ font-size: 14px; }
 
 //common//
-
-
-
-
-
-
 //google-map-2//
 .proceed-button{
     .btn-map {
     width: 143px;
 }
+}
+
+.icon-details,.crossroad{ padding: 0; }
+
+
+.bg-calculator{ margin-top: 0; }
+
+.heading-calculator {
+    margin-top: 45%;
+    padding: 0 25px;
+}
+.map-block-2{
+    .icon-details{
+ text-align: center!important;
+    }
 }
 //google-map-2//
 }
