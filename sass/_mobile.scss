@@ -1,5 +1,131 @@
-@media (max-width: $screen-xs-max) {}
+@media (max-width: $screen-xs-max) {
 
-@media (max-width: $screen-sm-max) {}
+    //common//
+
+h1 { font-size:40px; }
+
+h2 { font-size: 20px; }
+
+h3 { font-size: 18px;  }
+
+h4{font-size:16px; }
+
+p,li,span,.btn{ font-size: 12px; }
+
+    //common//
+
+//about-us//
+.story-info {
+    width: 65%;
+    margin-top: 10px !important;
+    p{
+    font-size: 10px;
+    line-height: 15px;
+}
+    }
+
+.story-infos{ margin-left: 25px;  }
+
+.story-imgs{ margin: 10px 0 0 5px; }
+
+.story-one { padding: 80px 50px; }
+
+.story-img {
+    width: 50px;
+    height: 50px;
+}
+
+.rounded {
+    width: 250px;
+    height: 85px;
+}
+
+.product-type{ margin-top: 400px!important; }
+
+.storyimg-mobile{ margin: 10px 0 0 5px; }
+
+//about us//
+
+//footer//
+.footer{ 
+    .pull-left,.pull-right{
+    float: none !important;
+    text-align: center;   
+    }
+
+    p{ padding: 10px 0; }
+}
+
+//footer
+
+//blog-individual//
+
+.main-content { padding: 0 15px; }
+
+.post-info { padding-bottom: 20px; }
+
+//blog-individual//
+
+//google-map-2//
+
+.map-content{
+    margin: 0;
+    padding: 25px 15px;
+}
+
+.icon-details,.crossroad{ padding: 0; }
+
+
+.bg-calculator{ margin-top: 0; }
+
+.heading-calculator {
+    margin-top: 45%;
+    padding: 0 25px;
+}
+
+.map-block-2{
+    .icon-details{
+ text-align: center!important;
+    }
+   
+
+
+
+}
+
+//google-map-2//
+
+
+
+}
+
+@media (max-width: $screen-sm-max) {
+//common//
+
+h1 { font-size:50px; }
+
+h2 { font-size: 30px; }
+
+h3 { font-size: 24px;  }
+
+h4{font-size:18px; }
+
+p,li,span,.btn{ font-size: 14px; }
+
+//common//
+
+
+
+
+
+
+//google-map-2//
+.proceed-button{
+    .btn-map {
+    width: 143px;
+}
+}
+//google-map-2//
+}
 
 @media (max-width: $screen-md-max) {}
