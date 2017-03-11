@@ -86,6 +86,22 @@
         padding-top: 70%;
     }
     //member-page//
+
+//blog//
+.mmtop{
+margin-top: 10px;
+}
+
+//blog//
+
+//google-map
+
+.mtop-25{
+margin-top: 25%;
+}
+
+//google-map//
+
 }
 
 @media (max-width: $screen-xs-max) {
@@ -253,4 +269,53 @@
         padding: 0 25px;
     }
      //google-map-2//
+
+     //product//
+.drone-info {
+    padding: 15px 20px;
+    width: auto;
+}
+.product{
+.product-type {
+    margin-top: 200px !important;
+}
+}
+  //product//
+
+  //terms,policy//
+
+
+.policy-container {
+    padding: 40px 20px;
+    margin: 0 0px;
+}
+
+.policy-mobile{ margin-top: 35%; }
+  //terms//
+
+
+  //blog//
+  .blog-relative {
+    position: relative;
+    padding-right: 0;
+    margin: 10px auto;
+     .form-control {
+    padding: 0 40px 0 90px;
+}
+}
+  //blog//
+
+//member//
+.member-form {
+    margin: 0;
+    padding: 30px 0 40px;
+}
+
+.signup-container {
+    margin: 0;
+}
+
+//memeber//
+
+
 }
