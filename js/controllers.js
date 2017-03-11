@@ -262,6 +262,16 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             $scope.formSubmitted = true;
         }
     })
+     .controller('ContactUsCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+        $scope.template = TemplateService.changecontent("contactus"); //Use same name of .html file
+        $scope.menutitle = NavigationService.makeactive("ContactUs"); //This is the Title of the Website
+        TemplateService.title = $scope.menutitle;
+        $scope.navigation = NavigationService.getnav();
+
+        $scope.formSubmitted = false;
+
+
+    })
     .controller('MemberCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("member"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Member"); //This is the Title of the Website

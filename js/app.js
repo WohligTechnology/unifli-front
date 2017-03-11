@@ -89,6 +89,11 @@ firstapp.config(function($stateProvider, $urlRouterProvider, $httpProvider, $loc
             templateUrl: "views/template.html",
             controller: 'MemberCtrl'
         })
+         .state('contactus', {
+            url: "/contactus",
+            templateUrl: "views/template.html",
+            controller: 'ContactUsCtrl'
+        })
 
           .state('privacypolicy', {
             url: "/privacypolicy",

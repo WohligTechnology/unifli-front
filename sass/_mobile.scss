@@ -439,4 +439,54 @@ margin-top: 25%;
 
 //product//
 
+.contact-top{
+    margin-top: 20px;
+
 }
+
+// how to work start
+
+h2.step-right:after{
+    display: none;
+}
+h2.step.step-left:before{
+    display: none;
+}
+h2.step.step-left:after{
+    display: none;
+}
+h2.step.step-top:before{
+    display: none;
+}
+h2.step.step-2-top:before{
+    display: none;
+}
+.w-50 {
+    width: 60%;
+    margin-top: 17px;
+}
+.work-container {
+    background: white;
+    padding: 18px 47px 0px 28px;
+    margin-top: 25px;
+}
+.worklogo {
+    width: 100%;
+    padding: 7px 52px 0 70px;
+}
+.support-heading2 {
+    padding-top: 35%;
+}
+}
+// 
+
+
+
+// h2.step.step-left:before{
+//     display: none;
+// }
+// h2.step.step-left:after {
+//     display: none;
+// }
+
+// 
