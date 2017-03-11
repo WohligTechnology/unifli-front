@@ -4,7 +4,8 @@
           <h1 class="mycart-heading">my cart</h1>        
       </div>
       <div class="mycart-content">
-       <table class="table">
+        <div class="table-responsive">
+     <table class="table">
     <thead>
       <tr class="text-center mycart-row">
         <th class="mycart-head weight-700">Serial No.</th>
@@ -53,11 +54,16 @@
     <tfoot>
        <tr class="mycart-row1">
        <td class="total" colspan="5">Total Amount:</td> 
-       <td class="text-center">$12000</td>  
+       <td class="text-center total">$12000</td>  
       </tr>
     </tfoot>
   </table>
-  <div class="float-l mycart-coupon-box"><span class="weight-700">Apply coupon code :</span><input type="text" class="coupon-box ml-10"></div>
+        </div>
+  
+  <div class="clearfix">
+<div class="float-l mycart-coupon-box"><span class="weight-700">Apply coupon code :</span><input type="text" class="coupon-box ml-10"></div>
+  </div>
+  
   <div>
   <button type="submit" class="btn btn-main btn-mycart float-r">Checkout</button>
   </div>
