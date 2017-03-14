@@ -125,13 +125,27 @@ margin-top: 25%;
 
 //product//
 
-// how
+// how we work
 
 .img-step1b {
    
     padding-top: 40px;
 }
-
+h2.step-right:after{
+    display: none;
+}
+h2.step.step-left:before{
+    display: none;
+}
+h2.step.step-left:after{
+    display: none;
+}
+h2.step.step-top:before{
+    display: none;
+}
+h2.step.step-2-top:before{
+    display: none;
+}
 }
 
 @media (max-width: $screen-xs-max) {
