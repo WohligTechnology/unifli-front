@@ -146,6 +146,12 @@ h2.step.step-top:before{
 h2.step.step-2-top:before{
     display: none;
 }
+.mb-top{
+    margin-top: 20px;
+}
+.ipad-top{
+    margin-top: -30px;
+}
 }
 
 @media (max-width: $screen-xs-max) {
