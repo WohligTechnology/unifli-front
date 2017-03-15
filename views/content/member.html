@@ -26,13 +26,13 @@
                             <input type="text" placeholder="State" value="" class="member-input" required>
                         </div>
                         <div class="form-group">
-                            <input type="url"  placeholder="Website"    class="member-input" required ng-blur="checkURl(this);">
+                            <input type="text"  placeholder="Website"   class="member-input" required >
                               <!--<span style="color:red" ng-show="form1.web.$error.url">
         Sorry Not a Valid URL, Don't Forget to Use http://</span>-->
                         </div>
                         <div class="form-group radio member-form-m30">
                          <h4 class="inline-block">Do You Have UNIFLI Drone?</h4>
-                         <input  type="radio" id="radio1" name="radio" value="yes"/>
+                         <input  type="radio" id="radio1" name="radio"  value="yes"/>
                   <label for="radio1" class="pl-10">
                     <span></span> Yes </label>
                     <input type="radio" id="radio2" name="radio" value="no"  />
@@ -42,17 +42,17 @@
                        
                         <div class="form-group dropdown-margin">
                              <i class="fa fa-caret-down member-arrow" aria-hidden="true"></i>
-                            <select name="" id="menulist" class="dropdown-member">
+                            <select  id="menulist" class="dropdown-member" name="users" required ng-model="formData.userSelect">
                                 <!--<option selected="true" disabled>plan</option>-->
-                                 <option selected="true" disabled style="display:none">plan</option>
-                                <option value="1">TRIAL </option>
-                                <option value="2">STANDARD</option>
-                                <option value="3">PREMIUM</option>
+                                 <option selected="true" disabled >plan</option>
+                                <option value="1" ng-repeat="option in dropdownList" >{{option.plan}} </option>
+                                <!--<option value="2" >STANDARD</option>
+                                <option value="3">PREMIUM</option>-->
                             </select>
                         </div>
                         <div class="form-group checkbox">
 
-                            <input type="checkbox" value="" id="agree" />
+                            <input type="checkbox" required value="" id="agree" />
                               <label class="checkbox-inline" for="agree">I agree with all terms and conditions and privacy policy
                             </label>
                         </div>
@@ -91,7 +91,7 @@
                 </div>
                  </div>
                    <div>
-                 <button type="submit" class="btn btn-main">SUBMIT</button>
+                 <button type="submit" ng-click="test('sm'); checkselection(); " ng-disabled="!formData"  class="btn btn-main" >SUBMIT</button>
                  </div>
                   </div>
 

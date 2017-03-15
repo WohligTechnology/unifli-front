@@ -261,6 +261,7 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
             console.log(data);
             $scope.formSubmitted = true;
         }
+         
     })
      .controller('ContactUsCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
         $scope.template = TemplateService.changecontent("contactus"); //Use same name of .html file
@@ -272,14 +273,36 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
 
     })
-    .controller('MemberCtrl', function ($scope, TemplateService, NavigationService, $timeout) {
+    .controller('MemberCtrl', function ($scope, TemplateService, NavigationService, $timeout, $uibModal) {
         $scope.template = TemplateService.changecontent("member"); //Use same name of .html file
         $scope.menutitle = NavigationService.makeactive("Member"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
-       $scope.checkURl = function(val){
-           console.log(val);
-       };
+         $scope.test = function (size) {
+        
+            $scope.testModal = $uibModal.open({
+                animation: true,
+                templateUrl: 'views/content/Modal/modsub.html',
+                scope: $scope,
+                size: size,
+                windowClass: "test-modal"
+
+            });
+        };
+        $scope.dropdownList=[{
+            plan:'Trial'
+        },{
+            plan:'premium'
+        }, {
+            plan:'standard'
+        }]
+        $scope.checkselection = function () {
+if ($scope.userSelect != "" && $scope.userSelect != undefined)
+$scope.msg = 'Selected Value: '+$scope.userSelect;
+else
+$scope.msg = 'Please Select Dropdown Value';
+}
+   
     })
 
     .controller('Blog-IndividualCtrl', function ($scope, TemplateService, NavigationService, $timeout) {

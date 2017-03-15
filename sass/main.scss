@@ -1520,7 +1520,15 @@ footer {
 .p-minheight{
         min-height: 86px;
 }
+.modsub{
 
+    margin: 10px 0;
+}
+.section-1-hover-img {
+   &:hover {
+       background-image: url("../img/section1-hover.png");
+   }
+}
 @import "fancybox-override";
 @import "ruchi";
 @import "mobile";
