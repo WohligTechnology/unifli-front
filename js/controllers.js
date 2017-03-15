@@ -277,6 +277,9 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
         $scope.menutitle = NavigationService.makeactive("Member"); //This is the Title of the Website
         TemplateService.title = $scope.menutitle;
         $scope.navigation = NavigationService.getnav();
+       $scope.checkURl = function(val){
+           console.log(val);
+       };
     })
 
     .controller('Blog-IndividualCtrl', function ($scope, TemplateService, NavigationService, $timeout) {

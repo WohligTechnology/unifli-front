@@ -152,6 +152,27 @@ h2.step.step-2-top:before{
 .ipad-top{
     margin-top: -30px;
 }
+.service-drone {
+     padding: 40px 0px; 
+}
+.support-heading {
+    padding-top: 60%;
+}
+.mtop-member {
+    padding-top: 40%;
+}
+.p-minheight{
+        min-height: 130px;
+}
+.makeActive-service .active p:before{
+    width: 120px ;
+}
+.bg-support-dfm {
+    background-position: center center;
+}
+.support-left {
+    padding-left: 160px;
+}
 }
 
 @media (max-width: $screen-xs-max) {
@@ -465,10 +486,10 @@ h2.step.step-2-top:before{
 
 //product//
 
-.contact-top{
-    margin-top: 20px;
+// .contact-top{
+//     margin-top: 20px;
 
-}
+// }
 
 // how to work start
 
@@ -510,6 +531,38 @@ h2.step.step-2-top:before{
 }
 .support-heading2 {
     padding-top: 35%;
+}
+
+// service
+.service-content {
+    background-color: white;
+    padding: 60px 10px;
+    margin: 0px 10px;
+}
+
+.service-data {
+    padding: 0px 0px;
+    /* text-align: justify; */
+}
+.support-icon {
+    
+    width: 60px;
+    
+}
+.makeActive-service .active p:before{
+    width: 90px ;
+}
+.slide-down {
+    margin-top: 25% !important;
+}
+.p-minheight{
+        min-height: 165px;
+}
+.bg-support-dfm {
+    background-position: center center;
+}
+.support-left {
+    padding-left: 23px;
 }
 }
 // 

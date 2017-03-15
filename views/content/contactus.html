@@ -4,86 +4,48 @@
                     <h1 class="m-0">contact us</h1>
         </div>
         <div class="signup-container">
-              <form>
+              <form ng-submit=""  name="form1">
 
                 <div class="member-form">
                     <div class="row">
                 <div class="col-md-6 col-sm-12 col-xs-12">
                     <div class="member-col">
                        <div class="form-group">
-                      <input type="text" placeholder="Name" value="" class="member-input">
+                      <input type="text" placeholder="Name" value="" class="member-input" required>
                        </div>
                        
                         <div class="form-group">
-                             <input type="text" placeholder="Phone" value="" class="member-input">
+                             <input type="text" only-Digits ng-model="phone" name="phone" placeholder="Phone"  class="member-input" required minlength="8" maxlength="15" > 
                         </div>
                         <div class="form-group">
-                             <input type="text" placeholder="Company" value="" class="member-input">
+                             <input type="text" placeholder="Company" value="" class="member-input" required>
                         </div>
                         
-<!--                       
-                        <div class="form-group radio member-form-m30">
-                         <h4 class="inline-block">Do You Have UNIFLI Drone?</h4>
-                         <input  type="radio" id="radio1" name="radio" value="yes"/>
-                  <label for="radio1" class="pl-10">
-                    <span></span> Yes </label>
-                    <input type="radio" id="radio2" name="radio" value="no"  />
-                 <label for="radio2">
-                    <span></span> No </label>
-                        </div>-->
-                       
-                        <!--<div class="form-group dropdown-margin">
-                             <i class="fa fa-caret-down member-arrow" aria-hidden="true"></i>
-                            <select name="" id="menulist" class="dropdown-member">
-                                <option selected="true" disabled>plan</option>
-                                <option value="1">TRIAL </option>
-                                <option value="2">STANDARD</option>
-                                <option value="3">PREMIUM</option>
-                            </select>
-                        </div>-->
-                        <!--<div class="form-group checkbox">
 
-                            <input type="checkbox" value="" id="agree" />
-                              <label class="checkbox-inline" for="agree">I agree with all terms and conditions and privacy policy
-                            </label>
-                        </div>-->
                         </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-xs-12 ipad-top">
                 <div class="member-col">
                     <div class="form-group">
-                      <input type="text" placeholder="Email" value="" class="member-input">
+                      <input type="email" ng-model="mail" sname="mail"  placeholder="Email" value="" class="member-input" required>
+                       <!--<span style="color:red" ng-show="form1.mail.$error.email">
+        Sorry Not a Valid Email, Don't Forget to .com</span>-->
                        </div>
                         <div class="form-group">
-                             <input type="text" placeholder="Mobile" value="" class="member-input">
+                             <input type="text" only-Digits ng-model="formdata.mobile" placeholder="Mobile" name="mobile" class="member-input" required minlength="10" maxlength="10" >
                         </div>
                         <div class="form-group">
-                            <input type="text" placeholder="Designation" value="" class="member-input">
+                            <input type="text" placeholder="Designation" value="" class="member-input" required>
                         </div>
                        
-                        <!--<div class="form-group">
-                             <input type="text" placeholder="City" value="" class="member-input">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Zip" value="" class="member-input">
-                        </div>
-                        <div class="form-group">
-                            <input type="text" placeholder="Type of Drone" value="" class="member-input">
-                        </div>-->
-                        <!--<div class="form-group member-form-m30">
-                         <h4 class="inline-block member-right">Do You Have coupon?</h4>
-                        <input type="text" class="coupon-box" placeholder="Coupon Code">
-                        </div>
-                        <div class="form-group">
-                           <input type="text" placeholder="$500" value="" class="member-input">
-                        </div>-->
+                      
                 </div>
                 </div>
                <div class="col-md-12 col-sm-12 col-xs-12 mb-top">
                  <div class=" member-col contact-top">
 
                      <div class="form-group">
-                            <input type="text" placeholder="Description" value="" class="member-input">
+                            <input type="text" placeholder="Description" value="" class="member-input" required>
                         </div>
                 </div>
                  </div>
