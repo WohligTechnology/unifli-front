@@ -289,19 +289,19 @@ angular.module('phonecatControllers', ['templateservicemod', 'navigationservice'
 
             });
         };
-        $scope.dropdownList=[{
-            plan:'Trial'
-        },{
-            plan:'premium'
-        }, {
-            plan:'standard'
-        }]
-        $scope.checkselection = function () {
-if ($scope.userSelect != "" && $scope.userSelect != undefined)
-$scope.msg = 'Selected Value: '+$scope.userSelect;
-else
-$scope.msg = 'Please Select Dropdown Value';
-}
+//         $scope.dropdownList=[{
+//             plan:'Trial'
+//         },{
+//             plan:'premium'
+//         }, {
+//             plan:'standard'
+//         }]
+//         $scope.checkselection = function () {
+// if ($scope.userSelect != "" && $scope.userSelect != undefined)
+// $scope.msg = 'Selected Value: '+$scope.userSelect;
+// else
+// $scope.msg = 'Please Select Dropdown Value';
+// }
    
     })
 

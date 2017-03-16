@@ -22,11 +22,11 @@
                 <span class="icon-bar"></span>
                </button>
                 <div class="header-logo">
-                    <img class="img-responsive img-logo" src="img/123.png" alt="">
+                    <img ui-sref="home" class="img-responsive img-logo" src="img/123.png" alt="">
                 </div>
                 <ul class="list-inline pull-right header-list">
                     <li ng-click="login();" class="btn btn-white">Log in</li>
-                    <li class="btn btn-join list-padding" ui-sref="member">Join</li>
+                    <li class="btn btn-join list-padding" ui-sref="member-page">Join</li>
                 </ul>
             </div>
             <div class="sidemenu" ng-show="openmenu">
@@ -36,10 +36,13 @@
                         <li ui-sref="about" class="btn header-btn">ABOUT UNIFLI</li>
                         <li ui-sref="service" class="btn header-btn">SERVICES</li>
                         <li ui-sref="how-we-work" class="btn header-btn">HOW WE WORK</li>
-                        <li ui-sref="member" class="btn header-btn">MEMBERSHIP</li>
+                        <li ui-sref="member-page" class="btn header-btn">MEMBERSHIP</li>
                         <li ui-sref="google-map" class="btn header-btn">GOOGLE MAPS AREA CALCULATOR</li>
                         <li ui-sref="support-dfm" class="btn header-btn">SUPPORT</li>
                             <li ui-sref="contactus" class="btn header-btn">CONTACT US</li>
+                             <li ui-sref="privacypolicy" class="btn header-btn">PRIVACY POLICY</li>
+                             <li ui-sref="terms-and-conditions" class="btn header-btn">TERMS & CONDITIONS</li>
+                             
                     </ul>
                 </div>
             </div>
