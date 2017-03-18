@@ -1514,41 +1514,45 @@ footer {
     text-align: left;
     vertical-align: middle;
 }
-.contact-top{
+
+.contact-top {
     margin-top: -14px;
 }
-.p-minheight{
-        min-height: 86px;
-}
-.modsub{
 
+.p-minheight {
+    min-height: 86px;
+}
+
+.modsub {
     margin: 10px 0;
 }
-.section-1-hover-img {
-   &:hover {
-       background-image: url("../img/section1-hover.png");
-   }
+
+// .section-1-hover-img {
+//     &:hover {
+//         background-image: url("../img/section1-hover.png");
+//     }
+// }
+.doneLoading:hover {
+    cursor: pointer;
 }
-.doneLoading:hover{
-    cursor:pointer;
-}
-.member-input2{
+
+.member-input2 {
     border: 2px solid rgba(5, 77, 73, 0.5);
     // border-bottom: 2px solid rgba(5, 77, 73, 0.5);
     font-family: share tech;
     padding-top: 10px;
     width: 100%;
     padding-left: 6px;
-   
-   
 }
-.desc{
+
+.desc {
     color: #04423b;
 }
+
 .modal-backdrop.in {
     opacity: 0.9;
-   
 }
+
 @import "fancybox-override";
 @import "ruchi";
 @import "mobile";
