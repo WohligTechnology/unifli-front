@@ -173,9 +173,15 @@ h2.step.step-2-top:before{
 .support-left {
     padding-left: 160px;
 }
+// hom start
+.fc-img {
+    margin-top: -10px;
+}
 }
 
 @media (max-width: $screen-xs-max) {
+
+
     // about.html changes
     .p-120 {
         padding: 0 !important;
@@ -564,16 +570,116 @@ h2.step.step-2-top:before{
 .support-left {
     padding-left: 23px;
 }
+// home start
+.line-after:after{
+    display: none;
 }
-// 
+.fc-img {
+    margin-top: -28px;
+}
 
+.thumbs{
+    padding: 10px 0px !important;
+}
 
+.surveying-info {
+    width: 80% !important;
+    padding: 16px;
+} 
+.view-top{
+    margin-top: -63px;
+}
+.view-top2{
+    margin-top: -30px;
+}
+.view-top3{
+    margin-top: -60px;
+}
+.load {
+    width: 31% !important;
+    position: absolute;
+    left: 36%;
+    bottom: -71px;
+}
+.newsletter{
+    margin: 0 0px;
+}
+.top-spacings {
+    // padding-top: 32px;
+    padding-top: 0px;
+    margin-top: -25px;
+}
+.font-mb{
+    font-size: 12px;
+}
+.more-info-drones p {
+    padding-right: 0px;
+}
+.left-spacing {
+    padding-left: 20px;
+    text-align: center
+}
+.button {
+    width: 23%;
+}
+.text-right {
+   text-align: center;
+}
+.text-left{
 
-// h2.step.step-left:before{
-//     display: none;
-// }
-// h2.step.step-left:after {
-//     display: none;
-// }
+        margin-right: 137px;
+    text-align: center;
+}
 
-// 
+.contact {
+    margin-top: 50%;
+}
+.top-spac{
+    margin-left: 84px;
+}
+.newsletter-mb{
+    margin-left: 82px;
+    margin-top: 23px;
+}
+.newsletter button {
+   
+    width: 25%;
+}
+.contact-section{
+    background-position: center center;
+    background-size: cover;
+}
+.contact {
+    color:#04423b !important;
+}
+.fc-img h2:before {
+    
+    left: 48px;
+}
+.dots{
+    display: none;
+}
+.fly-2{
+display: none;
+}
+.rw-padd{
+    padding-left: 0px;
+}
+.convert{
+    margin-top: 40px;
+}
+.cad-draf{
+       margin-top: -15px;
+}
+.my-read{
+        width: 50%;
+}
+.top-padd{
+   
+    margin-top: 0px;
+}
+.space-top{
+        padding-top: 51px !important;
+    margin-top: -25px !important;
+}
+}
