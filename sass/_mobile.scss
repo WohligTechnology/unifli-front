@@ -2,6 +2,76 @@
 @media (max-width: $screen-md-max) {}
 
 @media (max-width: $screen-sm-max) {
+         
+        //  home start
+
+        .slide-down {
+    margin-top: 14% !important;
+}
+
+.line-after:after {
+    content: "";
+   
+    width: 28%;
+  
+    top: 31px;
+    right: 5px;
+}
+.load {
+    width: 31% !important;
+    position: absolute;
+    left: 36%;
+    bottom: -71px;
+}
+.newsletter2{
+    text-align: center;
+}
+.my-read{
+    width: 38%;
+}
+.droning {
+    
+    margin-top: -154px;
+}
+.more-info-drones p {
+    padding-right: 55px;
+}
+.read{
+        width: 27%;
+}
+.section-blog {
+   
+    top: 22%;
+    left:14%;
+}
+.surveying-info{
+    width: 68%;
+}
+.support-section{
+        margin-top: -283px;
+}
+.contact-section{
+          background-position: -450px;
+              margin-top: -77px;
+}
+.contact {
+    margin-top: 95%;
+     
+}
+.top-spacings {
+    padding-top: 127px;
+}
+.fc-img h2:before{
+        width: 91%;
+    left: 9px;
+}
+// ser
+
+.support-left3{
+        padding-left: 30px !important;
+}
+
+
     // about.html changes
     .p-120 {
         padding: 0 68px;
@@ -156,7 +226,7 @@ h2.step.step-2-top:before{
      padding: 40px 0px; 
 }
 .support-heading {
-    padding-top: 60%;
+    padding-top: 33%;
 }
 .mtop-member {
     padding-top: 40%;
@@ -171,7 +241,16 @@ h2.step.step-2-top:before{
     background-position: center center;
 }
 .support-left {
-    padding-left: 160px;
+    padding-left: 153px;
+}
+.mt10 {
+    margin-top: 40px;
+}
+.support-left2{
+        padding-left: 0px;
+}
+.policy-heading {
+    padding-top: 33%;
 }
 // hom start
 .fc-img {
@@ -179,9 +258,18 @@ h2.step.step-2-top:before{
 }
 }
 
+
+
+
+
 @media (max-width: $screen-xs-max) {
 
-
+.support-heading {
+    padding-top: 60%;
+}
+.mt10 {
+    margin-top: 28px;
+}
     // about.html changes
     .p-120 {
         padding: 0 !important;
@@ -514,6 +602,7 @@ h2.step.step-top:before{
 h2.step.step-2-top:before{
     display: none;
 }
+
 .w-50 {
     width: 65%;
     margin-top: 17px;
@@ -545,6 +634,7 @@ h2.step.step-2-top:before{
     padding: 60px 10px;
     margin: 0px 10px;
 }
+
 
 .service-data {
     padding: 0px 0px;
@@ -595,12 +685,7 @@ h2.step.step-2-top:before{
 .view-top3{
     margin-top: -60px;
 }
-.load {
-    width: 31% !important;
-    position: absolute;
-    left: 36%;
-    bottom: -71px;
-}
+
 .newsletter{
     margin: 0 0px;
 }
@@ -620,7 +705,7 @@ h2.step.step-2-top:before{
     text-align: center
 }
 .button {
-    width: 23%;
+    width: 31%;
 }
 .text-right {
    text-align: center;
@@ -636,6 +721,8 @@ h2.step.step-2-top:before{
 }
 .top-spac{
     margin-left: 84px;
+    padding-top: 33px;
+    margin-top: 0px !important;
 }
 .newsletter-mb{
     margin-left: 82px;
@@ -679,7 +766,35 @@ display: none;
     margin-top: 0px;
 }
 .space-top{
-        padding-top: 51px !important;
-    margin-top: -25px !important;
+        padding-top: 148px !important;
+    // margin-top: -25px !important;
 }
+.support-img img {
+    margin: 50px auto;
+}
+.fc-img h2:before {
+    width: 65%;
+}
+.support-section {
+    margin-top: 25px;
+}
+// .load2 {
+//     width: 12% !important;
+// }
+
+.read {
+    width: 33%;
+}
+.section-blog {
+    top: -1%;
+    left: 7%;
+}
+.surveying-info {
+    width: 96% !important;
+    padding: 7px;
+}
+.sep-22{
+        margin: -15px;
+}
+
 }
