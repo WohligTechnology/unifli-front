@@ -277,9 +277,7 @@ h2.step.step-2-top:before{
 
 @media (max-width: $screen-xs-max) {
 
-.support-heading {
-    padding-top: 60%;
-}
+
 .mt10 {
     margin-top: 28px;
 }
@@ -812,8 +810,15 @@ display: none;
 .mtop-member2 {
     padding-top: 69% !important;
 }
-.support-heading {
+.support-heading2 {
     padding-top: 40% !important;
 }
+
+.support-heading{
+     padding-top: 65% !important;
+}
+// .support-heading2 {
+//     padding-top: 66% !important;
+// }
 
 }
