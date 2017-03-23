@@ -55,7 +55,11 @@
 .section-blog {
    
     top: 22%;
-    left:14%;
+    left:25%;
+}
+.sec-4{
+    // min-height: 0px !important;
+    min-height: 748px !important;
 }
 .surveying-info{
     width: 68%;
@@ -682,6 +686,17 @@ h2.step.step-2-top:before{
 .line-after:after{
     display: none;
 }
+.f-size {
+    font-size: 46px !important;
+}
+
+
+.sec-4{
+    // min-height: 0px !important;
+    min-height: 0px !important;
+}
+
+
 .fc-img {
     margin-top: -28px;
 }
@@ -805,7 +820,7 @@ display: none;
 }
 .section-blog {
     top: -1%;
-    left: 7%;
+    left: 15%;
 }
 .surveying-info {
     width: 96% !important;
