@@ -8,7 +8,7 @@
             </div>-->
             <h1 class="contact text-right">contact us</h1>
             <div class="">
-                <button class="button newsletter2 pull-right text-left " ui-sref="contactus">Inquire Now</button>
+                <button class="button newsletter2 pull-right text-left text-center" ui-sref="contactus">Inquire Now</button>
             </div>
          
         </div>
@@ -41,9 +41,9 @@
         <label for="news">Sign up for our newsletter:</label>
         <form ng-if="!show">
           
-        <input type="email" id="news" ng-model="formdata.email" required>
+        <input class="inline-block" type="email" id="news" ng-model="formdata.email" required>
        
-             <button class="button  margin0" ng-click="subscribe(formdata)">Submit</button>
+             <button class="button  margin0 inline-block" ng-click="subscribe(formdata)">Submit</button>
               <!--<div class="input-group">
         <input type="text" class="form-control" placeholder="Search">
         <div class="input-group-btn">
